@@ -37,3 +37,5 @@ npm run preview
 
 https://alanchan246.github.io/sucheng-practice/
 
+（路由使用 hash，例如 `#/learn`、`#/levels/1`，避免 GitHub Pages 重整後路徑遺失。）
+

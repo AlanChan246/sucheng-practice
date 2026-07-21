@@ -50,7 +50,7 @@ export function LevelsPage() {
   return (
     <div className="page-stack">
       <header className="page-header page-header--center">
-        <h1>關卡地图</h1>
+        <h1>關卡地圖</h1>
         <p className="lede lede--center">
           第 {progress.unlockedLevel} / {dict.levels.length} 關已解鎖，每關 {dict.charsPerLevel} 字，準確率 {PASS_ACCURACY}% 過關。
         </p>
@@ -157,7 +157,7 @@ export function LevelPlayPage() {
     return (
       <div className="page-stack">
         <p className="status">這一關尚未解鎖，請先完成第 {progress.unlockedLevel} 關。</p>
-        <SecondaryNavButton to="/levels">返回關卡地图</SecondaryNavButton>
+        <SecondaryNavButton to="/levels">返回關卡地圖</SecondaryNavButton>
       </div>
     )
   }

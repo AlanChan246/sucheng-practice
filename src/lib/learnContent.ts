@@ -83,7 +83,7 @@ export const RADICAL_VARIANTS: Record<string, RadicalVariant[]> = {
   ],
   T: [
     { form: '艹', note: '草字頭', examples: ['花', '草'] },
-    { form: '卄', note: '廿的變形', examples: ['开'] },
+    { form: '卄', note: '廿的變形', examples: ['開'] },
   ],
   U: [
     { form: '乚', note: '豎彎鉤，屬山', examples: ['亂', '札'] },
