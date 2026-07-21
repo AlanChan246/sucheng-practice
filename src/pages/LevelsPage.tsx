@@ -65,7 +65,7 @@ export function LevelsPage() {
         >
           上一章
         </button>
-        <span>
+        <span className="chapter-nav-label">
           {getChapterTitle(visibleChapter)} · {getChapterRangeLabel(visibleChapter, dict.levels.length)}
         </span>
         <button
