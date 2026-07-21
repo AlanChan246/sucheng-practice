@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="速成練習">
+  <rect width="64" height="64" rx="14" fill="#f5f5f7"/>
+  <rect x="10" y="14" width="44" height="36" rx="8" fill="#ffffff" stroke="#d2d2d7" stroke-width="1"/>
+  <text x="32" y="40" text-anchor="middle" font-size="22" font-family="PingFang TC, sans-serif" fill="#0071e3">速</text>
+</svg>
