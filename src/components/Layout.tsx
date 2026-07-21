@@ -24,7 +24,13 @@ export function Layout() {
     <div className="app-shell">
       <header className="site-header">
         <Link to="/" className="brand">
-          <img className="brand-logo" src="/logo.png" alt="" width={38} height={38} />
+          <img
+            className="brand-logo"
+            src={`${import.meta.env.BASE_URL}logo.png`}
+            alt=""
+            width={38}
+            height={38}
+          />
           <strong>速成練習</strong>
         </Link>
         <nav className="site-nav site-nav--desktop" aria-label="主要導覽">

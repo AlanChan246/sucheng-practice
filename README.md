@@ -30,3 +30,10 @@ npm run preview
 ```
 
 建置前會自動執行 `scripts/build-dict.mjs` 產生 `public/sucheng-dict.json`。
+
+## 線上網站
+
+推送到 `main` 後會自動部署到 GitHub Pages：
+
+https://alanchan246.github.io/sucheng-practice/
+

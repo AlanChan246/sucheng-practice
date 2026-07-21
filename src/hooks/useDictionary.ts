@@ -11,7 +11,7 @@ export function useDictionary() {
   useEffect(() => {
     if (cached) return
 
-    fetch('/sucheng-dict.json')
+    fetch(`${import.meta.env.BASE_URL}sucheng-dict.json`)
       .then((res) => {
         if (!res.ok) throw new Error('無法載入字庫')
         return res.json()

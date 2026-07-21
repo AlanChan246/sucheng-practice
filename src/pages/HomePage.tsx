@@ -6,7 +6,7 @@ export function HomePage() {
       <div className="hero-visual">
         <div className="hero-circle">
           <img
-            src="/hero-practice.png"
+            src={`${import.meta.env.BASE_URL}hero-practice.png`}
             alt="在安靜書桌上練習打字"
             width={840}
             height={840}
