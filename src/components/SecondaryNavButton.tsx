@@ -1,5 +1,5 @@
 import { type ReactNode } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { hardNavigate } from '../lib/navigation'
 
 interface SecondaryNavButtonProps {
   to: string
@@ -7,10 +7,8 @@ interface SecondaryNavButtonProps {
 }
 
 export function SecondaryNavButton({ to, children }: SecondaryNavButtonProps) {
-  const navigate = useNavigate()
-
   return (
-    <button type="button" className="btn btn-secondary" onClick={() => navigate(to)}>
+    <button type="button" className="btn btn-secondary" onClick={() => hardNavigate(to)}>
       {children}
     </button>
   )

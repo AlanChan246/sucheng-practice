@@ -5,15 +5,17 @@
     <script>
       (function () {
         var redirect = sessionStorage.getItem('gh-pages-redirect')
+        // Restore deep link after GitHub Pages 404 fallback.
+        // Include a history idx so React Router's browser history stays in sync.
         if (redirect) {
           sessionStorage.removeItem('gh-pages-redirect')
-          history.replaceState(null, '', redirect)
+          history.replaceState({ idx: 0 }, '', redirect)
         }
         // Migrate leftover HashRouter URLs like /levels#/practice → /practice
         if (location.hash.indexOf('#/') === 0) {
           var base = '/sucheng-practice'
           var route = location.hash.slice(1)
-          history.replaceState(null, '', base + route + location.search)
+          history.replaceState({ idx: 0 }, '', base + route + location.search)
         }
       })()
     </script>

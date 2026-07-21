@@ -1,6 +1,6 @@
 import { useState, type ReactNode } from 'react'
-import { Link } from 'react-router-dom'
 import { KeyboardHighlight } from './KeyboardHighlight'
+import { appPath } from '../lib/navigation'
 import { formatAccuracy, formatDuration } from '../lib/stats'
 import type { SessionStats } from '../types'
 
@@ -43,9 +43,9 @@ export function PracticeShell({
     >
       <div className="practice-topbar">
         {exitTo ? (
-          <Link to={exitTo} className="practice-exit">
+          <a href={appPath(exitTo)} className="practice-exit">
             {exitLabel}
-          </Link>
+          </a>
         ) : (
           <span />
         )}

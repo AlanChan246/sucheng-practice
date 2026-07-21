@@ -1,5 +1,6 @@
-import { Link, NavLink, Outlet, useNavigate } from 'react-router-dom'
+import { NavLink, Outlet, useLocation } from 'react-router-dom'
 import { useSettings, type ThemeMode } from '../hooks/useSettings'
+import { appPath, hardNavigate } from '../lib/navigation'
 
 const NAV_ITEMS = [
   { to: '/learn', label: '教學' },
@@ -8,33 +9,13 @@ const NAV_ITEMS = [
   { to: '/progress', label: '進度' },
 ] as const
 
-function AppNavLink({
-  to,
-  label,
-  className,
-}: {
-  to: string
-  label: string
-  className?: string
-}) {
-  const navigate = useNavigate()
-
-  return (
-    <NavLink
-      to={to}
-      className={className}
-      onClick={(event) => {
-        event.preventDefault()
-        navigate(to)
-      }}
-    >
-      {label}
-    </NavLink>
-  )
+function isNavActive(pathname: string, to: string) {
+  if (to === '/') return pathname === '/'
+  return pathname === to || pathname.startsWith(`${to}/`)
 }
 
 export function Layout() {
-  const navigate = useNavigate()
+  const location = useLocation()
   const { theme, setTheme, largeText, toggleLargeText } = useSettings()
 
   const cycleTheme = () => {
@@ -49,14 +30,7 @@ export function Layout() {
   return (
     <div className="app-shell">
       <header className="site-header">
-        <Link
-          to="/"
-          className="brand"
-          onClick={(event) => {
-            event.preventDefault()
-            navigate('/')
-          }}
-        >
+        <a href={appPath('/')} className="brand">
           <img
             className="brand-logo"
             src={`${import.meta.env.BASE_URL}logo.png`}
@@ -65,10 +39,17 @@ export function Layout() {
             height={38}
           />
           <strong>速成練習</strong>
-        </Link>
+        </a>
         <nav className="site-nav site-nav--desktop" aria-label="主要導覽">
           {NAV_ITEMS.map((item) => (
-            <AppNavLink key={item.to} to={item.to} label={item.label} />
+            <a
+              key={item.to}
+              href={appPath(item.to)}
+              className={isNavActive(location.pathname, item.to) ? 'active' : undefined}
+              aria-current={isNavActive(location.pathname, item.to) ? 'page' : undefined}
+            >
+              {item.label}
+            </a>
           ))}
         </nav>
         <div className="header-tools">
@@ -97,12 +78,19 @@ export function Layout() {
 
       <nav className="bottom-nav" aria-label="主要導覽">
         {NAV_ITEMS.map((item) => (
-          <AppNavLink
+          <NavLink
             key={item.to}
             to={item.to}
-            label={item.label}
-            className="bottom-nav-link"
-          />
+            className={({ isActive }) =>
+              ['bottom-nav-link', isActive ? 'active' : null].filter(Boolean).join(' ')
+            }
+            onClick={(event) => {
+              event.preventDefault()
+              hardNavigate(item.to)
+            }}
+          >
+            {item.label}
+          </NavLink>
         ))}
       </nav>
 
