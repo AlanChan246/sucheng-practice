@@ -16,7 +16,7 @@ function isNavActive(pathname: string, to: string) {
 
 export function Layout() {
   const location = useLocation()
-  const { theme, setTheme, largeText, toggleLargeText } = useSettings()
+  const { theme, setTheme } = useSettings()
 
   const cycleTheme = () => {
     const order: ThemeMode[] = ['system', 'light', 'dark']
@@ -60,14 +60,6 @@ export function Layout() {
             aria-label={`主題：${themeLabel}`}
           >
             {themeLabel}
-          </button>
-          <button
-            type="button"
-            className={`tool-btn${largeText ? ' tool-btn--active' : ''}`}
-            onClick={toggleLargeText}
-            aria-pressed={largeText}
-          >
-            大字
           </button>
         </div>
       </header>

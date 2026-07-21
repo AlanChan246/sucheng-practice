@@ -13,9 +13,7 @@ export type ThemeMode = 'system' | 'light' | 'dark'
 interface SettingsContextValue {
   theme: ThemeMode
   resolvedTheme: 'light' | 'dark'
-  largeText: boolean
   setTheme: (theme: ThemeMode) => void
-  toggleLargeText: () => void
 }
 
 const STORAGE_KEY = 'sucheng-practice-settings'
@@ -25,10 +23,11 @@ const SettingsContext = createContext<SettingsContextValue | null>(null)
 function loadSettings() {
   try {
     const raw = localStorage.getItem(STORAGE_KEY)
-    if (!raw) return { theme: 'light' as ThemeMode, largeText: false }
-    return JSON.parse(raw) as { theme: ThemeMode; largeText: boolean }
+    if (!raw) return { theme: 'light' as ThemeMode }
+    const parsed = JSON.parse(raw) as { theme?: ThemeMode }
+    return { theme: parsed.theme ?? ('light' as ThemeMode) }
   } catch {
-    return { theme: 'light' as ThemeMode, largeText: false }
+    return { theme: 'light' as ThemeMode }
   }
 }
 
@@ -59,26 +58,20 @@ export function SettingsProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     document.documentElement.dataset.theme = resolvedTheme
-    document.documentElement.classList.toggle('large-text', settings.largeText)
-  }, [resolvedTheme, settings.largeText])
+    document.documentElement.classList.remove('large-text')
+  }, [resolvedTheme])
 
   const setTheme = useCallback((theme: ThemeMode) => {
     setSettings((prev) => ({ ...prev, theme }))
-  }, [])
-
-  const toggleLargeText = useCallback(() => {
-    setSettings((prev) => ({ ...prev, largeText: !prev.largeText }))
   }, [])
 
   const value = useMemo(
     () => ({
       theme: settings.theme,
       resolvedTheme,
-      largeText: settings.largeText,
       setTheme,
-      toggleLargeText,
     }),
-    [settings, resolvedTheme, setTheme, toggleLargeText],
+    [settings, resolvedTheme, setTheme],
   )
 
   return <SettingsContext.Provider value={value}>{children}</SettingsContext.Provider>

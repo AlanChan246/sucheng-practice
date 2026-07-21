@@ -950,10 +950,6 @@ input {
   line-height: 1;
 }
 
-.large-text .prompt-char {
-  font-size: clamp(4.5rem, 14vw, 6.5rem);
-}
-
 .prompt-char--flash {
   animation: fade-up 0.4s var(--ease);
 }
