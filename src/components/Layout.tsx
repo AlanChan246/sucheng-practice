@@ -1,4 +1,4 @@
-import { Link, NavLink, Outlet } from 'react-router-dom'
+import { Link, NavLink, Outlet, useNavigate } from 'react-router-dom'
 import { useSettings, type ThemeMode } from '../hooks/useSettings'
 
 const NAV_ITEMS = [
@@ -6,9 +6,35 @@ const NAV_ITEMS = [
   { to: '/practice', label: '練習' },
   { to: '/levels', label: '關卡' },
   { to: '/progress', label: '進度' },
-]
+] as const
+
+function AppNavLink({
+  to,
+  label,
+  className,
+}: {
+  to: string
+  label: string
+  className?: string
+}) {
+  const navigate = useNavigate()
+
+  return (
+    <NavLink
+      to={to}
+      className={className}
+      onClick={(event) => {
+        event.preventDefault()
+        navigate(to)
+      }}
+    >
+      {label}
+    </NavLink>
+  )
+}
 
 export function Layout() {
+  const navigate = useNavigate()
   const { theme, setTheme, largeText, toggleLargeText } = useSettings()
 
   const cycleTheme = () => {
@@ -23,7 +49,14 @@ export function Layout() {
   return (
     <div className="app-shell">
       <header className="site-header">
-        <Link to="/" className="brand">
+        <Link
+          to="/"
+          className="brand"
+          onClick={(event) => {
+            event.preventDefault()
+            navigate('/')
+          }}
+        >
           <img
             className="brand-logo"
             src={`${import.meta.env.BASE_URL}logo.png`}
@@ -35,9 +68,7 @@ export function Layout() {
         </Link>
         <nav className="site-nav site-nav--desktop" aria-label="主要導覽">
           {NAV_ITEMS.map((item) => (
-            <NavLink key={item.to} to={item.to}>
-              {item.label}
-            </NavLink>
+            <AppNavLink key={item.to} to={item.to} label={item.label} />
           ))}
         </nav>
         <div className="header-tools">
@@ -66,9 +97,12 @@ export function Layout() {
 
       <nav className="bottom-nav" aria-label="主要導覽">
         {NAV_ITEMS.map((item) => (
-          <NavLink key={item.to} to={item.to} className="bottom-nav-link">
-            {item.label}
-          </NavLink>
+          <AppNavLink
+            key={item.to}
+            to={item.to}
+            label={item.label}
+            className="bottom-nav-link"
+          />
         ))}
       </nav>
 
