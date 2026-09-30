@@ -1,0 +1,195 @@
+{
+  "viewport": "mobile",
+  "theme": "dark",
+  "scenario": "progress-weak",
+  "route": "progress",
+  "fixture": true,
+  "reducedMotion": true,
+  "findings": [
+    {
+      "antipattern": "first-viewport-column-overflow",
+      "name": "One column stretches the first viewport",
+      "description": "A multi-column opening section lets one column run far past the fold while its sibling fits in a single viewport, so the short column floats in dead space and the fold falls deep inside one section. Balance the columns, cap the tall one, or let the long content flow below the opening row.",
+      "severity": "warning",
+      "category": "quality",
+      "file": "http://127.0.0.1:4173/sucheng-practice/progress",
+      "line": 0,
+      "snippet": "div.app-shell opens the page with one column running 204% of the viewport tall while a sibling fits in 8% — the fold falls deep inside the section"
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "measurements": {
+    "title": "速成 · 兩鍵合拍",
+    "theme": "dark",
+    "viewport": [
+      390,
+      844
+    ],
+    "pageWidth": 390,
+    "overflow": false,
+    "headings": [
+      [
+        "H1",
+        "慢慢練，真的有記住。"
+      ],
+      [
+        "H2",
+        "這幾個字，再見一次。"
+      ],
+      [
+        "H2",
+        "這幾個鍵，多碰面就熟。"
+      ],
+      [
+        "H2",
+        "小節，一步一步完成。"
+      ]
+    ],
+    "fontsLoaded": "loaded",
+    "brokenImages": [],
+    "smallText": [],
+    "smallTargets": [],
+    "unnamedControls": [],
+    "inlineHeadingGaps": [
+      {
+        "element": "h1. 慢慢練，真的有記住。",
+        "before": "0px",
+        "after": "22px",
+        "size": "35px",
+        "weight": "760"
+      },
+      {
+        "element": "h2. 這幾個字，再見一次。",
+        "before": "0px",
+        "after": "12px",
+        "size": "21px",
+        "weight": "690"
+      },
+      {
+        "element": "h2. 這幾個鍵，多碰面就熟。",
+        "before": "0px",
+        "after": "12px",
+        "size": "21px",
+        "weight": "690"
+      },
+      {
+        "element": "h2. 小節，一步一步完成。",
+        "before": "0px",
+        "after": "12px",
+        "size": "21px",
+        "weight": "690"
+      }
+    ],
+    "firstKeys": [],
+    "navTop": 776,
+    "text": "慢慢練，真的有記住。最近已練過 1 個字。多隔幾次回想，才會知道哪些字記得穩。這幾個字，再見一次。先想首尾，再按出來。答案不急著看。明再試重溫這一組這幾個鍵，多碰面就熟。以下鍵位在作答中出現過至少三次首尾混淆。A日練熟這個字根B月練熟這個字根小節，一步一步完成。0 / 6 小節已完成；完成是這次會做，記得穩還要之後再試。1明2森3手4打5困6好各模式與關卡的詳細紀錄次數是已完成的題組；最近與最佳均為首次獨立作答準確率。最近用時是該題組的作答時間。模式次數最近最佳最近用時看字打碼0未開始——看碼選字0未開始——默寫0未開始——關卡0未開始——已完成 0 關。舊版本用時包含閱讀回饋；新版只累加每題作答時間，兩者不作速度比較。回到關卡 進度只儲存在這個瀏覽器，不會跨裝置同步。重新開始，清除進度",
+    "detectorGroups": [
+      {
+        "selector": "div.app-shell",
+        "tagName": "div",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 1653.859375,
+          "top": 0,
+          "right": 390,
+          "bottom": 1653.859375,
+          "left": 0
+        },
+        "isPageLevel": false,
+        "isHidden": false,
+        "findings": [
+          {
+            "type": "first-viewport-column-overflow",
+            "category": "quality",
+            "severity": "warning",
+            "advisory": false,
+            "detail": "div.app-shell opens the page with one column running 204% of the viewport tall while a sibling fits in 8% — the fold falls deep inside the section",
+            "ignoreValue": "",
+            "name": "One column stretches the first viewport",
+            "description": "A multi-column opening section lets one column run far past the fold while its sibling fits in a single viewport, so the short column floats in dead space and the fold falls deep inside one section. Balance the columns, cap the tall one, or let the long content flow below the opening row."
+          }
+        ]
+      }
+    ],
+    "resources": [
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/index-CcZlyOc2.js",
+        "bytes": 96945,
+        "duration": 14.399999991059303
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/index-BHFGh7ny.css",
+        "bytes": 51623,
+        "duration": 11.900000005960464
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-latin-wght-normal-CjMECRfU.woff2",
+        "bytes": 25436,
+        "duration": 27
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-118-wght-normal-CWrNe9UE.woff2",
+        "bytes": 60596,
+        "duration": 11.700000002980232
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-117-wght-normal-DxSUmn6U.woff2",
+        "bytes": 65740,
+        "duration": 13
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-116-wght-normal-Df_sWUUP.woff2",
+        "bytes": 72012,
+        "duration": 12.900000005960464
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-119-wght-normal-uK-ZmsBB.woff2",
+        "bytes": 34852,
+        "duration": 13.200000002980232
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-113-wght-normal-CRQfLReA.woff2",
+        "bytes": 71784,
+        "duration": 19.200000002980232
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-115-wght-normal-BzydpMOE.woff2",
+        "bytes": 74632,
+        "duration": 14.699999988079071
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-112-wght-normal-BWioGL2B.woff2",
+        "bytes": 73848,
+        "duration": 14.899999991059303
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-110-wght-normal-CuMLARLR.woff2",
+        "bytes": 79660,
+        "duration": 17.099999994039536
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-100-wght-normal-CeyvuWjh.woff2",
+        "bytes": 63580,
+        "duration": 17.400000005960464
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-114-wght-normal-D5H20qUS.woff2",
+        "bytes": 85412,
+        "duration": 16
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-111-wght-normal-SqRJKajE.woff2",
+        "bytes": 75160,
+        "duration": 16.30000001192093
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/favicon.svg",
+        "bytes": 850,
+        "duration": 12.300000011920929
+      }
+    ]
+  }
+}

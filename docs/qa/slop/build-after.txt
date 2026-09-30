@@ -1,0 +1,120 @@
+
+> sucheng-practice@0.0.0 build
+> npm run dict && tsc -b && vite build
+
+
+> sucheng-practice@0.0.0 dict
+> node scripts/build-dict.mjs
+
+Built dictionary: 4159 chars, 167 levels
+vite v8.1.5 building client environment for production...
+[2Ktransforming...✓ 1924 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                                   2.15 kB │ gzip:  1.33 kB
+dist/assets/noto-sans-tc-87-wght-normal-Yrph325E.woff2            5.79 kB
+dist/assets/noto-sans-tc-88-wght-normal-qM37cYHV.woff2            7.56 kB
+dist/assets/noto-sans-tc-latin-ext-wght-normal-BFabhjDY.woff2     8.26 kB
+dist/assets/noto-sans-tc-99-wght-normal-D9WNKjpg.woff2            8.80 kB
+dist/assets/noto-sans-tc-91-wght-normal-Dcrjozns.woff2            8.85 kB
+dist/assets/noto-sans-tc-0-wght-normal-AlCjBspo.woff2             8.90 kB
+dist/assets/noto-sans-tc-vietnamese-wght-normal-B77OGAeV.woff2    9.04 kB
+dist/assets/noto-sans-tc-90-wght-normal-BLG28ssT.woff2            9.38 kB
+dist/assets/noto-sans-tc-8-wght-normal-BHOicRI8.woff2             9.54 kB
+dist/assets/noto-sans-tc-cyrillic-wght-normal-DHeihy9e.woff2      9.98 kB
+dist/assets/noto-sans-tc-89-wght-normal-DQgsOy-T.woff2           10.64 kB
+dist/assets/noto-sans-tc-86-wght-normal-Cq_w8Em-.woff2           12.19 kB
+dist/assets/noto-sans-tc-7-wght-normal-foGylaCC.woff2            14.37 kB
+dist/assets/noto-sans-tc-6-wght-normal-WPkr41zz.woff2            15.32 kB
+dist/assets/noto-sans-tc-84-wght-normal-D9L0JLly.woff2           18.84 kB
+dist/assets/noto-sans-tc-34-wght-normal-C1wbJ2k5.woff2           20.98 kB
+dist/assets/noto-sans-tc-44-wght-normal-Dv8Wk8tG.woff2           21.05 kB
+dist/assets/noto-sans-tc-26-wght-normal-CLhaJ79b.woff2           22.80 kB
+dist/assets/noto-sans-tc-latin-wght-normal-CjMECRfU.woff2        25.13 kB
+dist/assets/noto-sans-tc-27-wght-normal-Bsb6CrxP.woff2           26.58 kB
+dist/assets/noto-sans-tc-80-wght-normal-B3lzDGAN.woff2           27.04 kB
+dist/assets/noto-sans-tc-73-wght-normal-Dx6FRt8Y.woff2           27.59 kB
+dist/assets/noto-sans-tc-79-wght-normal-BTshvStA.woff2           28.06 kB
+dist/assets/noto-sans-tc-19-wght-normal-C8pGE9DU.woff2           29.14 kB
+dist/assets/noto-sans-tc-41-wght-normal-CimuZG9f.woff2           29.33 kB
+dist/assets/noto-sans-tc-83-wght-normal-BKaoQorn.woff2           29.52 kB
+dist/assets/noto-sans-tc-33-wght-normal-BuZ7TSCr.woff2           30.60 kB
+dist/assets/noto-sans-tc-70-wght-normal-BJCVnFr4.woff2           30.83 kB
+dist/assets/noto-sans-tc-81-wght-normal-CdB6HoDd.woff2           31.32 kB
+dist/assets/noto-sans-tc-59-wght-normal-02_K4Ups.woff2           32.76 kB
+dist/assets/noto-sans-tc-64-wght-normal-CFXGj_qd.woff2           33.12 kB
+dist/assets/noto-sans-tc-77-wght-normal-DtQ0zzNs.woff2           34.10 kB
+dist/assets/noto-sans-tc-67-wght-normal-C7UtET7V.woff2           34.32 kB
+dist/assets/noto-sans-tc-119-wght-normal-uK-ZmsBB.woff2          34.55 kB
+dist/assets/noto-sans-tc-68-wght-normal-DU7AqVdX.woff2           34.86 kB
+dist/assets/noto-sans-tc-65-wght-normal-C6nqnFQi.woff2           35.35 kB
+dist/assets/noto-sans-tc-31-wght-normal-CUZYeSc0.woff2           35.55 kB
+dist/assets/noto-sans-tc-50-wght-normal-C42Zjgp-.woff2           35.80 kB
+dist/assets/noto-sans-tc-75-wght-normal-CY_syJjm.woff2           35.90 kB
+dist/assets/noto-sans-tc-85-wght-normal-D6VRmOzr.woff2           36.74 kB
+dist/assets/noto-sans-tc-60-wght-normal-CUXov-_V.woff2           37.33 kB
+dist/assets/noto-sans-tc-71-wght-normal-C68sB2pX.woff2           37.39 kB
+dist/assets/noto-sans-tc-24-wght-normal-q2nxC991.woff2           37.76 kB
+dist/assets/noto-sans-tc-72-wght-normal-zLtu43lR.woff2           37.76 kB
+dist/assets/noto-sans-tc-63-wght-normal-D8azYq-W.woff2           38.36 kB
+dist/assets/noto-sans-tc-40-wght-normal-Byd_iF60.woff2           39.26 kB
+dist/assets/noto-sans-tc-76-wght-normal-De8sopUP.woff2           39.68 kB
+dist/assets/noto-sans-tc-43-wght-normal-xnDjStnc.woff2           40.19 kB
+dist/assets/noto-sans-tc-53-wght-normal-DRtz34YW.woff2           40.32 kB
+dist/assets/noto-sans-tc-23-wght-normal-CpwJlAzD.woff2           40.55 kB
+dist/assets/noto-sans-tc-49-wght-normal-CCLgFFzC.woff2           40.61 kB
+dist/assets/noto-sans-tc-78-wght-normal-BM2ohN5p.woff2           41.12 kB
+dist/assets/noto-sans-tc-35-wght-normal-DJnPxO40.woff2           41.73 kB
+dist/assets/noto-sans-tc-54-wght-normal-Bctil8qQ.woff2           42.34 kB
+dist/assets/noto-sans-tc-52-wght-normal-BdHOWR67.woff2           42.34 kB
+dist/assets/noto-sans-tc-47-wght-normal-BeEDFoeW.woff2           42.44 kB
+dist/assets/noto-sans-tc-22-wght-normal-BxkVDKYB.woff2           42.71 kB
+dist/assets/noto-sans-tc-82-wght-normal-_Ir9Q2vB.woff2           43.04 kB
+dist/assets/noto-sans-tc-58-wght-normal-DzvAN8Jo.woff2           43.05 kB
+dist/assets/noto-sans-tc-21-wght-normal-J1OUZdIj.woff2           43.42 kB
+dist/assets/noto-sans-tc-48-wght-normal-CKLCikII.woff2           43.42 kB
+dist/assets/noto-sans-tc-25-wght-normal-t7uRby9D.woff2           43.51 kB
+dist/assets/noto-sans-tc-30-wght-normal-qEGnB_nK.woff2           43.65 kB
+dist/assets/noto-sans-tc-42-wght-normal-DT8sgwsv.woff2           43.70 kB
+dist/assets/noto-sans-tc-32-wght-normal-B4A85CGO.woff2           43.94 kB
+dist/assets/noto-sans-tc-38-wght-normal-CaasFSCy.woff2           43.96 kB
+dist/assets/noto-sans-tc-51-wght-normal-AEQJR1Ln.woff2           44.12 kB
+dist/assets/noto-sans-tc-29-wght-normal-CVD47Xgy.woff2           44.62 kB
+dist/assets/noto-sans-tc-69-wght-normal-ChhTaUGt.woff2           45.12 kB
+dist/assets/noto-sans-tc-62-wght-normal-DPjuIv4Z.woff2           45.38 kB
+dist/assets/noto-sans-tc-55-wght-normal-ChI6Gtzx.woff2           47.81 kB
+dist/assets/noto-sans-tc-66-wght-normal-CABLcObE.woff2           48.89 kB
+dist/assets/noto-sans-tc-36-wght-normal-D8HTrsxI.woff2           49.29 kB
+dist/assets/noto-sans-tc-56-wght-normal-B7o92O3n.woff2           49.84 kB
+dist/assets/noto-sans-tc-39-wght-normal-DNt0rKy4.woff2           49.90 kB
+dist/assets/noto-sans-tc-74-wght-normal-Bv7R4L9_.woff2           50.79 kB
+dist/assets/noto-sans-tc-37-wght-normal-Ci96APBt.woff2           50.94 kB
+dist/assets/noto-sans-tc-57-wght-normal-tuc02TtS.woff2           51.32 kB
+dist/assets/noto-sans-tc-28-wght-normal-DzIWEAg_.woff2           52.19 kB
+dist/assets/noto-sans-tc-20-wght-normal-C3zSSq0m.woff2           53.10 kB
+dist/assets/noto-sans-tc-61-wght-normal-CWCy7dBQ.woff2           54.08 kB
+dist/assets/noto-sans-tc-46-wght-normal-C7pDsoZP.woff2           55.00 kB
+dist/assets/noto-sans-tc-45-wght-normal-DdGhaj3f.woff2           56.88 kB
+dist/assets/noto-sans-tc-118-wght-normal-CWrNe9UE.woff2          60.29 kB
+dist/assets/noto-sans-tc-101-wght-normal-BazQQPpe.woff2          62.57 kB
+dist/assets/noto-sans-tc-100-wght-normal-CeyvuWjh.woff2          63.28 kB
+dist/assets/noto-sans-tc-102-wght-normal-DWn0bv9H.woff2          63.29 kB
+dist/assets/noto-sans-tc-117-wght-normal-DxSUmn6U.woff2          65.44 kB
+dist/assets/noto-sans-tc-105-wght-normal-C1mWK2qa.woff2          68.21 kB
+dist/assets/noto-sans-tc-104-wght-normal-4GaPENTg.woff2          68.77 kB
+dist/assets/noto-sans-tc-103-wght-normal-tcQ1zu-u.woff2          70.40 kB
+dist/assets/noto-sans-tc-113-wght-normal-CRQfLReA.woff2          71.48 kB
+dist/assets/noto-sans-tc-116-wght-normal-Df_sWUUP.woff2          71.71 kB
+dist/assets/noto-sans-tc-109-wght-normal-CkWCzlGP.woff2          72.00 kB
+dist/assets/noto-sans-tc-106-wght-normal-Chq-ESxo.woff2          72.52 kB
+dist/assets/noto-sans-tc-108-wght-normal-BExvVcn7.woff2          72.54 kB
+dist/assets/noto-sans-tc-107-wght-normal-BC2EpFaE.woff2          73.02 kB
+dist/assets/noto-sans-tc-112-wght-normal-BWioGL2B.woff2          73.54 kB
+dist/assets/noto-sans-tc-115-wght-normal-BzydpMOE.woff2          74.33 kB
+dist/assets/noto-sans-tc-111-wght-normal-SqRJKajE.woff2          74.86 kB
+dist/assets/noto-sans-tc-110-wght-normal-CuMLARLR.woff2          79.36 kB
+dist/assets/noto-sans-tc-114-wght-normal-D5H20qUS.woff2          85.11 kB
+dist/assets/index-DNLQKNo_.css                                  142.77 kB │ gzip: 53.08 kB
+dist/assets/index-CEoWWJ-T.js                                   301.45 kB │ gzip: 97.54 kB
+
+✓ built in 461ms

@@ -1,0 +1,11 @@
+{
+  "viewport": "mobile",
+  "theme": "dark",
+  "scenario": "lesson-missing",
+  "route": "learn/not-a-lesson",
+  "fixture": true,
+  "reducedMotion": true,
+  "findings": [],
+  "errors": [],
+  "failedRequests": []
+}

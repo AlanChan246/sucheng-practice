@@ -1,0 +1,219 @@
+{
+  "viewport": "mobile",
+  "theme": "light",
+  "scenario": "progress-steady",
+  "route": "progress",
+  "fixture": true,
+  "reducedMotion": true,
+  "findings": [
+    {
+      "antipattern": "first-viewport-column-overflow",
+      "name": "One column stretches the first viewport",
+      "description": "A multi-column opening section lets one column run far past the fold while its sibling fits in a single viewport, so the short column floats in dead space and the fold falls deep inside one section. Balance the columns, cap the tall one, or let the long content flow below the opening row.",
+      "severity": "warning",
+      "category": "quality",
+      "file": "http://127.0.0.1:4173/sucheng-practice/progress",
+      "line": 0,
+      "snippet": "div.app-shell opens the page with one column running 184% of the viewport tall while a sibling fits in 8% — the fold falls deep inside the section"
+    },
+    {
+      "antipattern": "cream-palette",
+      "name": "Cream / beige palette",
+      "description": "A warm cream or beige page background has become the default \"tasteful\" AI surface, reached for by reflex. Choose a background that comes from a deliberate palette, not the safe warm off-white.",
+      "severity": "warning",
+      "category": "slop",
+      "file": "http://127.0.0.1:4173/sucheng-practice/progress",
+      "line": 0,
+      "snippet": "cream/beige page background rgb(248, 246, 237)"
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "measurements": {
+    "title": "速成 · 兩鍵合拍",
+    "theme": "light",
+    "viewport": [
+      390,
+      844
+    ],
+    "pageWidth": 390,
+    "overflow": false,
+    "headings": [
+      [
+        "H1",
+        "慢慢練，真的有記住。"
+      ],
+      [
+        "H2",
+        "下一小節，試一點新的。"
+      ],
+      [
+        "H2",
+        "小節，一步一步完成。"
+      ],
+      [
+        "H2",
+        "隔幾次再試，也想得起。"
+      ]
+    ],
+    "fontsLoaded": "loaded",
+    "brokenImages": [],
+    "smallText": [],
+    "smallTargets": [],
+    "unnamedControls": [],
+    "inlineHeadingGaps": [
+      {
+        "element": "h1. 慢慢練，真的有記住。",
+        "before": "0px",
+        "after": "22px",
+        "size": "35px",
+        "weight": "760"
+      },
+      {
+        "element": "h2. 下一小節，試一點新的。",
+        "before": "0px",
+        "after": "12px",
+        "size": "21px",
+        "weight": "690"
+      },
+      {
+        "element": "h2. 小節，一步一步完成。",
+        "before": "0px",
+        "after": "12px",
+        "size": "21px",
+        "weight": "690"
+      },
+      {
+        "element": "h2. 隔幾次再試，也想得起。",
+        "before": "0px",
+        "after": "12px",
+        "size": "21px",
+        "weight": "690"
+      }
+    ],
+    "firstKeys": [],
+    "navTop": 776,
+    "text": "慢慢練，真的有記住。最近已練過 1 個字。其中 1 個，隔一段時間再試也能想起來。下一小節，試一點新的。日和月，合起來是明學少少小節，一步一步完成。0 / 6 小節已完成；完成是這次會做，記得穩還要之後再試。1明2森3手4打5困6好隔幾次再試，也想得起。明至少三次相隔一天的獨立回憶答對，才會列在這裡。選字、看提示和當場重打不算。各模式與關卡的詳細紀錄次數是已完成的題組；最近與最佳均為首次獨立作答準確率。最近用時是該題組的作答時間。模式次數最近最佳最近用時看字打碼0未開始——看碼選字0未開始——默寫0未開始——關卡0未開始——已完成 0 關。舊版本用時包含閱讀回饋；新版只累加每題作答時間，兩者不作速度比較。回到關卡 進度只儲存在這個瀏覽器，不會跨裝置同步。重新開始，清除進度",
+    "detectorGroups": [
+      {
+        "selector": "div.app-shell",
+        "tagName": "div",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 1484.078125,
+          "top": 0,
+          "right": 390,
+          "bottom": 1484.078125,
+          "left": 0
+        },
+        "isPageLevel": false,
+        "isHidden": false,
+        "findings": [
+          {
+            "type": "first-viewport-column-overflow",
+            "category": "quality",
+            "severity": "warning",
+            "advisory": false,
+            "detail": "div.app-shell opens the page with one column running 184% of the viewport tall while a sibling fits in 8% — the fold falls deep inside the section",
+            "ignoreValue": "",
+            "name": "One column stretches the first viewport",
+            "description": "A multi-column opening section lets one column run far past the fold while its sibling fits in a single viewport, so the short column floats in dead space and the fold falls deep inside one section. Balance the columns, cap the tall one, or let the long content flow below the opening row."
+          }
+        ]
+      },
+      {
+        "selector": "body",
+        "tagName": "body",
+        "rect": null,
+        "isPageLevel": true,
+        "isHidden": false,
+        "findings": [
+          {
+            "type": "cream-palette",
+            "category": "slop",
+            "severity": "warning",
+            "advisory": false,
+            "detail": "cream/beige page background rgb(248, 246, 237)",
+            "ignoreValue": "",
+            "name": "Cream / beige palette",
+            "description": "A warm cream or beige page background has become the default \"tasteful\" AI surface, reached for by reflex. Choose a background that comes from a deliberate palette, not the safe warm off-white."
+          }
+        ]
+      }
+    ],
+    "resources": [
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/index-CcZlyOc2.js",
+        "bytes": 96945,
+        "duration": 23.200000002980232
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/index-BHFGh7ny.css",
+        "bytes": 51623,
+        "duration": 18.799999997019768
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-latin-wght-normal-CjMECRfU.woff2",
+        "bytes": 25436,
+        "duration": 40.900000005960464
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-118-wght-normal-CWrNe9UE.woff2",
+        "bytes": 60596,
+        "duration": 17.600000008940697
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-117-wght-normal-DxSUmn6U.woff2",
+        "bytes": 65740,
+        "duration": 18.799999997019768
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-116-wght-normal-Df_sWUUP.woff2",
+        "bytes": 72012,
+        "duration": 19.299999997019768
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-119-wght-normal-uK-ZmsBB.woff2",
+        "bytes": 34852,
+        "duration": 19.700000002980232
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-113-wght-normal-CRQfLReA.woff2",
+        "bytes": 71784,
+        "duration": 20.799999997019768
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-115-wght-normal-BzydpMOE.woff2",
+        "bytes": 74632,
+        "duration": 16.099999994039536
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-112-wght-normal-BWioGL2B.woff2",
+        "bytes": 73848,
+        "duration": 16.200000002980232
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-114-wght-normal-D5H20qUS.woff2",
+        "bytes": 85412,
+        "duration": 15.300000011920929
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-111-wght-normal-SqRJKajE.woff2",
+        "bytes": 75160,
+        "duration": 15.299999997019768
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/favicon.svg",
+        "bytes": 850,
+        "duration": 9.700000002980232
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-110-wght-normal-CuMLARLR.woff2",
+        "bytes": 79660,
+        "duration": 23.900000005960464
+      }
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "viewport": "desktop",
+  "theme": "dark",
+  "scenario": "dictionary-loading",
+  "route": "practice/char-to-code",
+  "fixture": true,
+  "reducedMotion": true,
+  "findings": [],
+  "errors": [],
+  "failedRequests": [],
+  "measurements": {
+    "title": "速成 · 兩鍵合拍",
+    "theme": "dark",
+    "viewport": [
+      1440,
+      900
+    ],
+    "pageWidth": 1440,
+    "overflow": false,
+    "headings": [],
+    "fontsLoaded": "loaded",
+    "brokenImages": [],
+    "smallText": [],
+    "smallTargets": [],
+    "unnamedControls": [],
+    "inlineHeadingGaps": [],
+    "firstKeys": [],
+    "text": "字庫準備中…",
+    "detectorGroups": [],
+    "resources": [
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/index-CEoWWJ-T.js",
+        "bytes": 96949,
+        "duration": 30.299999997019768
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/index-DNLQKNo_.css",
+        "bytes": 51627,
+        "duration": 28.099999994039536
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-115-wght-normal-BzydpMOE.woff2",
+        "bytes": 74632,
+        "duration": 28
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-118-wght-normal-CWrNe9UE.woff2",
+        "bytes": 60596,
+        "duration": 30.100000008940697
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-latin-wght-normal-CjMECRfU.woff2",
+        "bytes": 25436,
+        "duration": 19.399999991059303
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-119-wght-normal-uK-ZmsBB.woff2",
+        "bytes": 34852,
+        "duration": 23.399999991059303
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-117-wght-normal-DxSUmn6U.woff2",
+        "bytes": 65740,
+        "duration": 24
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-116-wght-normal-Df_sWUUP.woff2",
+        "bytes": 72012,
+        "duration": 24.600000008940697
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/favicon.svg",
+        "bytes": 850,
+        "duration": 11.600000008940697
+      }
+    ]
+  }
+}

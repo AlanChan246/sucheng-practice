@@ -1,0 +1,9 @@
+{
+  "unmodified_bundled_detector": true,
+  "sha256": "55b3f96bf882c6704015c3d8533c2c4987d7c4ce2669d0e15bf10e60d64b453b",
+  "skill_base": "/Users/alanchan/.agents/skills/impeccable",
+  "runtime": "/tmp/sucheng-slop-audit",
+  "isolated_browser_contexts": true,
+  "catalog_count": 67,
+  "registry_count": 59
+}

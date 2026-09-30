@@ -1,0 +1,11 @@
+{
+  "viewport": "desktop",
+  "theme": "dark",
+  "scenario": "progress-partial",
+  "route": "progress",
+  "fixture": true,
+  "reducedMotion": true,
+  "findings": [],
+  "errors": [],
+  "failedRequests": []
+}

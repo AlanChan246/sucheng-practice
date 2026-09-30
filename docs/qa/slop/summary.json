@@ -1,0 +1,42 @@
+{
+  "unique_scenarios": 38,
+  "final_cells": 228,
+  "findings": {
+    "flat-type-hierarchy": 20,
+    "em-dash-overuse": 6,
+    "cream-palette": 117,
+    "first-viewport-column-overflow": 20
+  },
+  "missing_measurements": [],
+  "page_overflow": [],
+  "script_errors": [],
+  "source_before": 110,
+  "source_after": [
+    {
+      "antipattern": "design-system-radius",
+      "name": "Radius outside DESIGN.md",
+      "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+      "severity": "advisory",
+      "category": "quality",
+      "file": "/Users/alanchan/projects/sucheng-practice/src/index.css",
+      "line": 155,
+      "snippet": "border-radius: 28px is outside the DESIGN.md rounded scale",
+      "ignoreValue": "28px"
+    },
+    {
+      "antipattern": "design-system-radius",
+      "name": "Radius outside DESIGN.md",
+      "description": "A border-radius value is outside the DESIGN.md rounded scale. Use a documented radius token or update the design system if the new shape is intentional.",
+      "severity": "advisory",
+      "category": "quality",
+      "file": "/Users/alanchan/projects/sucheng-practice/src/index.css",
+      "line": 280,
+      "snippet": "border-radius: 30px is outside the DESIGN.md rounded scale",
+      "ignoreValue": "30px"
+    }
+  ],
+  "config": {
+    "buildPath": "code-led"
+  },
+  "puppeteer_version": "25.12.0"
+}

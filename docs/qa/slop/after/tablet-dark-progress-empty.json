@@ -1,0 +1,154 @@
+{
+  "viewport": "tablet",
+  "theme": "dark",
+  "scenario": "progress-empty",
+  "route": "progress",
+  "fixture": true,
+  "reducedMotion": true,
+  "findings": [],
+  "errors": [],
+  "failedRequests": [],
+  "measurements": {
+    "title": "速成 · 兩鍵合拍",
+    "theme": "dark",
+    "viewport": [
+      768,
+      1024
+    ],
+    "pageWidth": 768,
+    "overflow": false,
+    "headings": [
+      [
+        "H1",
+        "每次試，都算一步。"
+      ],
+      [
+        "H2",
+        "下一小節，試一點新的。"
+      ],
+      [
+        "H2",
+        "小節，一步一步完成。"
+      ]
+    ],
+    "fontsLoaded": "loaded",
+    "brokenImages": [],
+    "smallText": [],
+    "smallTargets": [
+      {
+        "element": "a. 開始",
+        "size": [
+          36,
+          48
+        ]
+      },
+      {
+        "element": "a. 足跡",
+        "size": [
+          36,
+          48
+        ]
+      }
+    ],
+    "unnamedControls": [],
+    "inlineHeadingGaps": [
+      {
+        "element": "h1. 每次試，都算一步。",
+        "before": "0px",
+        "after": "22px",
+        "size": "33.024px",
+        "weight": "760"
+      },
+      {
+        "element": "h2. 下一小節，試一點新的。",
+        "before": "0px",
+        "after": "12px",
+        "size": "23px",
+        "weight": "690"
+      },
+      {
+        "element": "h2. 小節，一步一步完成。",
+        "before": "0px",
+        "after": "12px",
+        "size": "23px",
+        "weight": "690"
+      }
+    ],
+    "firstKeys": [],
+    "navTop": 0,
+    "text": "每次試，都算一步。先試一組。這裡會記住你練過甚麼，再給你下一步。下一小節，試一點新的。日和月，合起來是明學少少小節，一步一步完成。0 / 6 小節已完成；完成是這次會做，記得穩還要之後再試。1明2森3手4打5困6好各模式與關卡的詳細紀錄次數是已完成的題組；最近與最佳均為首次獨立作答準確率。最近用時是該題組的作答時間。模式次數最近最佳最近用時看字打碼0未開始——看碼選字0未開始——默寫0未開始——關卡0未開始——已完成 0 關。舊版本用時包含閱讀回饋；新版只累加每題作答時間，兩者不作速度比較。回到關卡 進度只儲存在這個瀏覽器，不會跨裝置同步。重新開始，清除進度",
+    "detectorGroups": [],
+    "resources": [
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/index-CcZlyOc2.js",
+        "bytes": 96945,
+        "duration": 14.399999991059303
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/index-BHFGh7ny.css",
+        "bytes": 51623,
+        "duration": 12
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-latin-wght-normal-CjMECRfU.woff2",
+        "bytes": 25436,
+        "duration": 21.700000002980232
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-118-wght-normal-CWrNe9UE.woff2",
+        "bytes": 60596,
+        "duration": 9.5
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-117-wght-normal-DxSUmn6U.woff2",
+        "bytes": 65740,
+        "duration": 10.299999997019768
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-116-wght-normal-Df_sWUUP.woff2",
+        "bytes": 72012,
+        "duration": 10.100000008940697
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-119-wght-normal-uK-ZmsBB.woff2",
+        "bytes": 34852,
+        "duration": 9.900000005960464
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-113-wght-normal-CRQfLReA.woff2",
+        "bytes": 71784,
+        "duration": 10.700000002980232
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-111-wght-normal-SqRJKajE.woff2",
+        "bytes": 75160,
+        "duration": 9.799999997019768
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-115-wght-normal-BzydpMOE.woff2",
+        "bytes": 74632,
+        "duration": 7.299999997019768
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-112-wght-normal-BWioGL2B.woff2",
+        "bytes": 73848,
+        "duration": 8
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-114-wght-normal-D5H20qUS.woff2",
+        "bytes": 85412,
+        "duration": 7.799999997019768
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/favicon.svg",
+        "bytes": 850,
+        "duration": 1.7999999970197678
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-110-wght-normal-CuMLARLR.woff2",
+        "bytes": 79660,
+        "duration": 26.400000005960464
+      }
+    ]
+  }
+}

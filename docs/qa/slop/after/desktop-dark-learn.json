@@ -1,0 +1,200 @@
+{
+  "viewport": "desktop",
+  "theme": "dark",
+  "scenario": "learn",
+  "route": "learn",
+  "fixture": true,
+  "reducedMotion": true,
+  "findings": [],
+  "errors": [],
+  "failedRequests": [],
+  "measurements": {
+    "title": "速成 · 兩鍵合拍",
+    "theme": "dark",
+    "viewport": [
+      1440,
+      900
+    ],
+    "pageWidth": 1440,
+    "overflow": false,
+    "headings": [
+      [
+        "H1",
+        "一次學少少，立即試得到。"
+      ],
+      [
+        "H2",
+        "先從這裡上手。"
+      ],
+      [
+        "H2",
+        "想一路練落去？"
+      ],
+      [
+        "H2",
+        "忘記哪個鍵？這裡找。"
+      ]
+    ],
+    "fontsLoaded": "loaded",
+    "brokenImages": [],
+    "smallText": [],
+    "smallTargets": [],
+    "unnamedControls": [],
+    "inlineHeadingGaps": [
+      {
+        "element": "h1. 一次學少少，立即試得到。",
+        "before": "0px",
+        "after": "22px",
+        "size": "52px",
+        "weight": "760"
+      },
+      {
+        "element": "h2. 先從這裡上手。",
+        "before": "0px",
+        "after": "12px",
+        "size": "23px",
+        "weight": "690"
+      },
+      {
+        "element": "h2. 想一路練落去？",
+        "before": "0px",
+        "after": "12px",
+        "size": "23px",
+        "weight": "690"
+      },
+      {
+        "element": "h2. 忘記哪個鍵？這裡找。",
+        "before": "0px",
+        "after": "12px",
+        "size": "23px",
+        "weight": "690"
+      }
+    ],
+    "firstKeys": [],
+    "navTop": 0,
+    "text": "一次學少少，立即試得到。認一點字根，按幾下，再自己回想。每小節只練一個概念。由第一個字開始先從這裡上手。01日和月，合起來是明先認識 A、B；一碼字根和兩碼字都試一次。明02三個字根，也只取首尾木、林、森：字根多了，速成碼仍然很短。森03手、水、人，慢慢認多一點把常見字根連到 Q、E、O 三個鍵。手04形狀變了，還是同一字根從扌和氵，找到「打」與「河」的首碼。打05看清外框，再取首尾口、田、困：空心口和有內容的外框不同。困06合起來，自己試用「好」和「晶」再確認一次首尾取碼。好想一路練落去？到關卡練字庫；準確率達 80%，就開下一關。看看關卡 忘記哪個鍵？這裡找。24 個基本字根，加上 X「難」、Z「重」特殊鍵。點一下，看常見變形。Q手W田E水R口T廿Y卜U山I戈O人P心A日S尸D木F火G土H竹J十K大L中Z重X難C金V女B月N弓M一日A曰日形微變，中間橫不穿出例：書、曹再看看取碼規則與例字定方向先觀察上下、左右、內外結構，再依倉頡拆字規則辨認字根；取碼不完全等於逐筆書寫順序。認字根切成主根或輔根。形狀像同一個主根，就按同一鍵（例如「扌」也是手 Q）。寫出倉頡全碼依切開順序記下每個字根對應的字母；最多取到五碼。留下速成兩鍵速成只要全碼的第一個和最後一個鍵。只有一碼時，速成就是那一鍵。日明打河晶好困首碼日A尾碼月B左右結構：先日後月，全碼剛好兩鍵倉頡 AB → 速成 AB",
+    "detectorGroups": [],
+    "resources": [
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/index-CEoWWJ-T.js",
+        "bytes": 96949,
+        "duration": 19.700000002980232
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/index-DNLQKNo_.css",
+        "bytes": 51627,
+        "duration": 16.5
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-latin-wght-normal-CjMECRfU.woff2",
+        "bytes": 25436,
+        "duration": 29.799999997019768
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-118-wght-normal-CWrNe9UE.woff2",
+        "bytes": 60596,
+        "duration": 15.5
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-117-wght-normal-DxSUmn6U.woff2",
+        "bytes": 65740,
+        "duration": 16.200000002980232
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-116-wght-normal-Df_sWUUP.woff2",
+        "bytes": 72012,
+        "duration": 16.799999997019768
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-119-wght-normal-uK-ZmsBB.woff2",
+        "bytes": 34852,
+        "duration": 16.5
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-111-wght-normal-SqRJKajE.woff2",
+        "bytes": 75160,
+        "duration": 15.700000002980232
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-113-wght-normal-CRQfLReA.woff2",
+        "bytes": 71784,
+        "duration": 17.200000002980232
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-115-wght-normal-BzydpMOE.woff2",
+        "bytes": 74632,
+        "duration": 14.700000002980232
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-114-wght-normal-D5H20qUS.woff2",
+        "bytes": 85412,
+        "duration": 12.5
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-68-wght-normal-DU7AqVdX.woff2",
+        "bytes": 35164,
+        "duration": 14.900000005960464
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-60-wght-normal-CUXov-_V.woff2",
+        "bytes": 37632,
+        "duration": 15
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-110-wght-normal-CuMLARLR.woff2",
+        "bytes": 79660,
+        "duration": 15.200000002980232
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-112-wght-normal-BWioGL2B.woff2",
+        "bytes": 73848,
+        "duration": 16.5
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-103-wght-normal-tcQ1zu-u.woff2",
+        "bytes": 70708,
+        "duration": 15.5
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-107-wght-normal-BC2EpFaE.woff2",
+        "bytes": 73320,
+        "duration": 15.5
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-104-wght-normal-4GaPENTg.woff2",
+        "bytes": 69076,
+        "duration": 18.799999997019768
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-73-wght-normal-Dx6FRt8Y.woff2",
+        "bytes": 27896,
+        "duration": 18.599999994039536
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-101-wght-normal-BazQQPpe.woff2",
+        "bytes": 62876,
+        "duration": 18.299999997019768
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-106-wght-normal-Chq-ESxo.woff2",
+        "bytes": 72824,
+        "duration": 18.100000008940697
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/favicon.svg",
+        "bytes": 850,
+        "duration": 12
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-108-wght-normal-BExvVcn7.woff2",
+        "bytes": 72840,
+        "duration": 41.6000000089407
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-24-wght-normal-q2nxC991.woff2",
+        "bytes": 38064,
+        "duration": 41.3999999910593
+      }
+    ]
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "dictionary": {
+    "entries": 4159,
+    "levels": 167,
+    "entriesUnchanged": true,
+    "levelsUnchanged": true
+  },
+  "contrastChecks": {
+    "light": [
+      {
+        "text": "ink",
+        "bg": "bg",
+        "ratio": 11.88
+      },
+      {
+        "text": "muted",
+        "bg": "bg",
+        "ratio": 5.8
+      },
+      {
+        "text": "ink",
+        "bg": "surface",
+        "ratio": 11
+      },
+      {
+        "text": "muted",
+        "bg": "surface",
+        "ratio": 5.37
+      },
+      {
+        "text": "accent-ink",
+        "bg": "accent",
+        "ratio": 10.04
+      },
+      {
+        "text": "success",
+        "bg": "success-bg",
+        "ratio": 6.29
+      },
+      {
+        "text": "ink",
+        "bg": "hint-bg",
+        "ratio": 10.27
+      },
+      {
+        "text": "muted",
+        "bg": "hint-bg",
+        "ratio": 5.01
+      }
+    ],
+    "dark": [
+      {
+        "text": "ink",
+        "bg": "bg",
+        "ratio": 13.71
+      },
+      {
+        "text": "muted",
+        "bg": "bg",
+        "ratio": 9.09
+      },
+      {
+        "text": "ink",
+        "bg": "surface",
+        "ratio": 10.55
+      },
+      {
+        "text": "muted",
+        "bg": "surface",
+        "ratio": 6.99
+      },
+      {
+        "text": "accent-ink",
+        "bg": "accent",
+        "ratio": 9.04
+      },
+      {
+        "text": "success",
+        "bg": "success-bg",
+        "ratio": 7.43
+      },
+      {
+        "text": "ink",
+        "bg": "hint-bg",
+        "ratio": 10.5
+      },
+      {
+        "text": "muted",
+        "bg": "hint-bg",
+        "ratio": 6.96
+      }
+    ]
+  }
+}

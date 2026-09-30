@@ -1,0 +1,11 @@
+{
+  "viewport": "mobile",
+  "theme": "dark",
+  "scenario": "input-input",
+  "route": "practice/char-to-code",
+  "fixture": true,
+  "reducedMotion": true,
+  "findings": [],
+  "errors": [],
+  "failedRequests": []
+}

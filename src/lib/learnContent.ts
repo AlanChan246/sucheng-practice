@@ -12,10 +12,8 @@ export const RADICAL_VARIANTS: Record<string, RadicalVariant[]> = {
   ],
   B: [
     { form: '⺝', note: '月作偏旁時的矮形', examples: ['有', '青'] },
-    { form: '肀', note: '月的變形（常見於字中）', examples: ['聿'] },
   ],
   C: [
-    { form: '钅', note: '金字旁', examples: ['銀', '針'] },
     { form: '丷', note: '金下方兩點的變形', examples: ['曾', '弟'] },
   ],
   D: [
@@ -110,7 +108,7 @@ export const RADICAL_VARIANTS: Record<string, RadicalVariant[]> = {
 export const CODING_RULES = [
   {
     title: '定方向',
-    body: '由上而下、由左而右、由外而內，依書寫順序把字切開。',
+    body: '先觀察上下、左右、內外結構，再依倉頡拆字規則辨認字根；取碼不完全等於逐筆書寫順序。',
   },
   {
     title: '認字根',
@@ -172,10 +170,10 @@ export const CODING_EXAMPLES: CodingExample[] = [
   },
   {
     char: '好',
-    parts: ['女', '木', '一'],
+    parts: ['女', '弓', '木'],
     cangjie: 'vnd',
     quick: 'vd',
-    note: '女 + 子（子再拆木、一）→ 全碼 VND，速成 VD',
+    note: '女 + 子（子再拆弓、木）→ 全碼 VND，速成 VD',
   },
   {
     char: '困',

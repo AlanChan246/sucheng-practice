@@ -1,0 +1,11 @@
+{
+  "viewport": "desktop",
+  "theme": "dark",
+  "scenario": "home-return",
+  "route": "",
+  "fixture": true,
+  "reducedMotion": true,
+  "findings": [],
+  "errors": [],
+  "failedRequests": []
+}

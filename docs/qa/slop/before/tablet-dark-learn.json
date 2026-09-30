@@ -1,0 +1,11 @@
+{
+  "viewport": "tablet",
+  "theme": "dark",
+  "scenario": "learn",
+  "route": "learn",
+  "fixture": true,
+  "reducedMotion": true,
+  "findings": [],
+  "errors": [],
+  "failedRequests": []
+}

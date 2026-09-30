@@ -1,94 +1,24 @@
-import { NavLink, Outlet, useLocation } from 'react-router-dom'
+import { Outlet, useLocation } from 'react-router-dom'
+import { Home, BookOpen, Keyboard, Footprints, Sun, Moon, Monitor } from 'lucide-react'
 import { useSettings, type ThemeMode } from '../hooks/useSettings'
-import { appPath, hardNavigate } from '../lib/navigation'
+import { useProgress } from '../hooks/useProgress'
+import { AppLink } from './AppLink'
 
-const NAV_ITEMS = [
-  { to: '/learn', label: '教學' },
-  { to: '/practice', label: '練習' },
-  { to: '/levels', label: '關卡' },
-  { to: '/progress', label: '進度' },
-] as const
-
-function isNavActive(pathname: string, to: string) {
-  if (to === '/') return pathname === '/'
-  return pathname === to || pathname.startsWith(`${to}/`)
-}
-
+const ITEMS = [{ to: '/', label: '開始', icon: Home }, { to: '/learn', label: '學少少', icon: BookOpen }, { to: '/practice', label: '練幾題', icon: Keyboard }, { to: '/progress', label: '足跡', icon: Footprints }]
 export function Layout() {
-  const location = useLocation()
+  const { pathname } = useLocation()
   const { theme, setTheme } = useSettings()
-
-  const cycleTheme = () => {
-    const order: ThemeMode[] = ['system', 'light', 'dark']
-    const next = order[(order.indexOf(theme) + 1) % order.length]
-    setTheme(next)
-  }
-
-  const themeLabel =
-    theme === 'system' ? '系統' : theme === 'light' ? '淺色' : '深色'
-
-  return (
-    <div className="app-shell">
-      <header className="site-header">
-        <a href={appPath('/')} className="brand">
-          <img
-            className="brand-logo"
-            src={`${import.meta.env.BASE_URL}logo.png`}
-            alt=""
-            width={38}
-            height={38}
-          />
-          <strong>速成練習</strong>
-        </a>
-        <nav className="site-nav site-nav--desktop" aria-label="主要導覽">
-          {NAV_ITEMS.map((item) => (
-            <a
-              key={item.to}
-              href={appPath(item.to)}
-              className={isNavActive(location.pathname, item.to) ? 'active' : undefined}
-              aria-current={isNavActive(location.pathname, item.to) ? 'page' : undefined}
-            >
-              {item.label}
-            </a>
-          ))}
-        </nav>
-        <div className="header-tools">
-          <button
-            type="button"
-            className="tool-btn"
-            onClick={cycleTheme}
-            aria-label={`主題：${themeLabel}`}
-          >
-            {themeLabel}
-          </button>
-        </div>
-      </header>
-
-      <main className="site-main">
-        <Outlet />
-      </main>
-
-      <nav className="bottom-nav" aria-label="主要導覽">
-        {NAV_ITEMS.map((item) => (
-          <NavLink
-            key={item.to}
-            to={item.to}
-            className={({ isActive }) =>
-              ['bottom-nav-link', isActive ? 'active' : null].filter(Boolean).join(' ')
-            }
-            onClick={(event) => {
-              event.preventDefault()
-              hardNavigate(item.to)
-            }}
-          >
-            {item.label}
-          </NavLink>
-        ))}
-      </nav>
-
-      <footer className="site-footer">
-        <p>進度儲存在這台裝置。</p>
-      </footer>
-    </div>
-  )
+  const { storageIssue } = useProgress()
+  const focused = pathname.startsWith('/practice/') || /^\/levels\/[^/]+$/.test(pathname)
+  const active = (to: string) => to === '/' ? pathname === '/' : pathname.startsWith(to) || (to === '/learn' && pathname.startsWith('/levels'))
+  const label = theme === 'system' ? '跟隨系統' : theme === 'dark' ? '深色' : '淺色'
+  const ThemeIcon = theme === 'system' ? Monitor : theme === 'dark' ? Moon : Sun
+  const cycleTheme = () => { const modes: ThemeMode[] = ['light','dark','system']; setTheme(modes[(modes.indexOf(theme) + 1) % modes.length]) }
+  return <div className={`app-shell ${focused ? 'app-shell--focused' : ''}`}>
+    <a className="skip-link" href="#main-content">跳到主要內容</a>
+    {!focused && <header className="site-header"><AppLink to="/" className="brand" aria-label="速成，回到開始"><span className="brand-keys" aria-hidden="true"><span>A</span><span>B</span></span><strong>速成<span>兩鍵合拍</span></strong></AppLink><nav className="desktop-nav" aria-label="主要導覽">{ITEMS.map(item => <AppLink key={item.to} to={item.to} aria-current={active(item.to) ? 'page' : undefined}>{item.label}</AppLink>)}</nav><button className="theme-button" type="button" onClick={cycleTheme} aria-label={`目前${label}，切換主題`}><ThemeIcon size={19} /><span>{label}</span></button></header>}
+    {storageIssue && <p className="storage-notice" role="status">{storageIssue}</p>}
+    <main id="main-content" className="site-main" tabIndex={-1}><Outlet /></main>
+    {!focused && <><footer className="site-footer"><span>慢慢練，兩鍵就上手。</span><span>進度只留在這個瀏覽器。</span></footer><nav className="mobile-nav" aria-label="手機主要導覽">{ITEMS.map(({ icon: Icon, ...item }) => <AppLink key={item.to} to={item.to} aria-current={active(item.to) ? 'page' : undefined}><Icon size={21} aria-hidden="true" /><span>{item.label}</span></AppLink>)}</nav></>}
+  </div>
 }

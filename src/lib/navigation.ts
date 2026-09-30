@@ -1,6 +1,6 @@
 /** Absolute app URL for GitHub Pages base path. */
 export function appPath(to: string): string {
-  const base = import.meta.env.BASE_URL.replace(/\/$/, '')
+  const base = (import.meta.env?.BASE_URL ?? '/sucheng-practice/').replace(/\/$/, '')
   if (to === '/') return `${base}/`
   return `${base}${to.startsWith('/') ? to : `/${to}`}`
 }

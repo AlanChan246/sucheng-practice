@@ -5,12 +5,12 @@ import { CharToCodePage } from './pages/CharToCodePage'
 import { CodeToCharPage } from './pages/CodeToCharPage'
 import { DictationPage } from './pages/DictationPage'
 import { HomePage } from './pages/HomePage'
-import { LearnPage } from './pages/LearnPage'
+import { LearnPage, LessonPage } from './pages/LearnPage'
 import { LevelPlayPage, LevelsPage } from './pages/LevelsPage'
 import { PracticeHubPage } from './pages/PracticeHubPage'
 import { ProgressPage } from './pages/ProgressPage'
 
-const basename = import.meta.env.BASE_URL.replace(/\/$/, '') || '/'
+const basename = (import.meta.env?.BASE_URL ?? '/sucheng-practice/').replace(/\/$/, '') || '/'
 
 function ScrollToTop() {
   const location = useLocation()
@@ -30,6 +30,7 @@ export default function App() {
         <Route element={<Layout />}>
           <Route index element={<HomePage />} />
           <Route path="learn" element={<LearnPage />} />
+          <Route path="learn/:lessonId" element={<LessonPage />} />
           <Route path="practice" element={<PracticeHubPage />} />
           <Route path="practice/char-to-code" element={<CharToCodePage />} />
           <Route path="practice/code-to-char" element={<CodeToCharPage />} />

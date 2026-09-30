@@ -1,0 +1,11 @@
+{
+  "viewport": "mobile",
+  "theme": "dark",
+  "scenario": "practice-hub",
+  "route": "practice",
+  "fixture": true,
+  "reducedMotion": true,
+  "findings": [],
+  "errors": [],
+  "failedRequests": []
+}

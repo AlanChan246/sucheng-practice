@@ -1,0 +1,142 @@
+{
+  "viewport": "mobile",
+  "theme": "dark",
+  "scenario": "home-first",
+  "route": "",
+  "fixture": true,
+  "reducedMotion": true,
+  "findings": [
+    {
+      "antipattern": "tiny-text",
+      "name": "Tiny body text",
+      "description": "Body text below 12px is hard to read, especially on high-DPI screens. Use at least 14px for body content, 16px is ideal.",
+      "severity": "warning",
+      "category": "quality",
+      "file": "http://127.0.0.1:4173/sucheng-practice/",
+      "line": 0,
+      "snippet": "11px body text"
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "measurements": {
+    "title": "速成 · 兩鍵合拍",
+    "theme": "dark",
+    "viewport": [
+      390,
+      844
+    ],
+    "pageWidth": 390,
+    "overflow": false,
+    "headings": [
+      [
+        "H1",
+        "明，就係呢兩鍵。"
+      ]
+    ],
+    "fontsLoaded": "loaded",
+    "brokenImages": [],
+    "smallText": [
+      "button.theme-button 深色",
+      "label. 輸入首碼、尾碼",
+      "p.input-hint 按滿 2 碼即作答，也可按 Enter 送出。",
+      "button.text-button system-keyboard-toggle 使用裝置鍵盤",
+      "button.key-delete 刪除",
+      "p. 先學兩鍵。下一小節，再加一點。",
+      "a. 開始",
+      "a. 學少少",
+      "a. 練幾題",
+      "a. 足跡"
+    ],
+    "smallTargets": [],
+    "unnamedControls": [],
+    "text": "明，就係呢兩鍵。左邊「日」是 A，右邊「月」是 B。先按 A，再按 B，試出第一個字。已經識少少？直接練 明日 A月 B輸入首碼、尾碼按滿 2 碼即作答，也可按 Enter 送出。使用裝置鍵盤A日B月刪除先學兩鍵。下一小節，再加一點。學少少自己試慢慢記得",
+    "detectorGroups": [
+      {
+        "selector": "#answer-hint",
+        "tagName": "p",
+        "rect": {
+          "x": 56,
+          "y": 621.9375,
+          "width": 278,
+          "height": 19.25,
+          "top": 621.9375,
+          "right": 334,
+          "bottom": 641.1875,
+          "left": 56
+        },
+        "isPageLevel": false,
+        "isHidden": false,
+        "findings": [
+          {
+            "type": "tiny-text",
+            "category": "quality",
+            "severity": "warning",
+            "advisory": false,
+            "detail": "11px body text",
+            "ignoreValue": "",
+            "name": "Tiny body text",
+            "description": "Body text below 12px is hard to read, especially on high-DPI screens. Use at least 14px for body content, 16px is ideal."
+          }
+        ]
+      }
+    ],
+    "resources": [
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/index-ChHYBpf-.js",
+        "bytes": 96711,
+        "duration": 25.700000002980232
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/index-2qt774BI.css",
+        "bytes": 51618,
+        "duration": 19.399999991059303
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-latin-wght-normal-CjMECRfU.woff2",
+        "bytes": 25436,
+        "duration": 47.30000001192093
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-118-wght-normal-CWrNe9UE.woff2",
+        "bytes": 60596,
+        "duration": 11.400000005960464
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-117-wght-normal-DxSUmn6U.woff2",
+        "bytes": 65740,
+        "duration": 13.799999997019768
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-116-wght-normal-Df_sWUUP.woff2",
+        "bytes": 72012,
+        "duration": 15.099999994039536
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-119-wght-normal-uK-ZmsBB.woff2",
+        "bytes": 34852,
+        "duration": 15.099999994039536
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-115-wght-normal-BzydpMOE.woff2",
+        "bytes": 74632,
+        "duration": 17.599999994039536
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-113-wght-normal-CRQfLReA.woff2",
+        "bytes": 71784,
+        "duration": 14.900000005960464
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-111-wght-normal-SqRJKajE.woff2",
+        "bytes": 75160,
+        "duration": 9.700000002980232
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/favicon.svg",
+        "bytes": 850,
+        "duration": 4.4000000059604645
+      }
+    ]
+  }
+}

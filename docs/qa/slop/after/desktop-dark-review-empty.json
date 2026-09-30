@@ -1,0 +1,137 @@
+{
+  "viewport": "desktop",
+  "theme": "dark",
+  "scenario": "review-empty",
+  "route": "practice/char-to-code?source=review",
+  "fixture": true,
+  "reducedMotion": true,
+  "findings": [
+    {
+      "antipattern": "flat-type-hierarchy",
+      "name": "Flat type hierarchy",
+      "description": "Font sizes are too close together — no clear visual hierarchy. Use fewer sizes with more contrast (aim for at least a 1.25 ratio between steps).",
+      "severity": "warning",
+      "category": "slop",
+      "file": "http://127.0.0.1:4173/sucheng-practice/practice/char-to-code?source=review",
+      "line": 0,
+      "snippet": "Sizes: 16px, 18px, 24px, 30px (ratio 1.9:1)"
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "measurements": {
+    "title": "速成 · 兩鍵合拍",
+    "theme": "dark",
+    "viewport": [
+      1440,
+      900
+    ],
+    "pageWidth": 1440,
+    "overflow": false,
+    "headings": [
+      [
+        "H1",
+        "這組暫時沒有要重溫的字"
+      ]
+    ],
+    "fontsLoaded": "loaded",
+    "brokenImages": [],
+    "smallText": [],
+    "smallTargets": [],
+    "unnamedControls": [],
+    "inlineHeadingGaps": [
+      {
+        "element": "h1. 這組暫時沒有要重溫的字",
+        "before": "30px",
+        "after": "22px",
+        "size": "30px",
+        "weight": "760"
+      }
+    ],
+    "firstKeys": [],
+    "text": "A日B月這組暫時沒有要重溫的字試試下一小節，或隨手練幾題。新的練習會繼續幫你找出值得重溫的地方。去練幾題",
+    "detectorGroups": [
+      {
+        "selector": "body",
+        "tagName": "body",
+        "rect": null,
+        "isPageLevel": true,
+        "isHidden": false,
+        "findings": [
+          {
+            "type": "flat-type-hierarchy",
+            "category": "slop",
+            "severity": "warning",
+            "advisory": false,
+            "detail": "Sizes: 16px, 18px, 24px, 30px (ratio 1.9:1)",
+            "ignoreValue": "",
+            "name": "Flat type hierarchy",
+            "description": "Font sizes are too close together — no clear visual hierarchy. Use fewer sizes with more contrast (aim for at least a 1.25 ratio between steps)."
+          }
+        ]
+      }
+    ],
+    "resources": [
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/index-CcZlyOc2.js",
+        "bytes": 96945,
+        "duration": 41.29999999701977
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/index-BHFGh7ny.css",
+        "bytes": 51623,
+        "duration": 29.299999997019768
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-115-wght-normal-BzydpMOE.woff2",
+        "bytes": 74632,
+        "duration": 29.200000002980232
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-118-wght-normal-CWrNe9UE.woff2",
+        "bytes": 60596,
+        "duration": 26
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-latin-wght-normal-CjMECRfU.woff2",
+        "bytes": 25436,
+        "duration": 13.599999994039536
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-119-wght-normal-uK-ZmsBB.woff2",
+        "bytes": 34852,
+        "duration": 15
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-117-wght-normal-DxSUmn6U.woff2",
+        "bytes": 65740,
+        "duration": 16.299999997019768
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-116-wght-normal-Df_sWUUP.woff2",
+        "bytes": 72012,
+        "duration": 16.399999991059303
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/sucheng-dict.json",
+        "bytes": 79408,
+        "duration": 28.899999991059303
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/favicon.svg",
+        "bytes": 850,
+        "duration": 10.099999994039536
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-112-wght-normal-BWioGL2B.woff2",
+        "bytes": 73848,
+        "duration": 9.200000002980232
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-113-wght-normal-CRQfLReA.woff2",
+        "bytes": 71784,
+        "duration": 7.5
+      }
+    ]
+  }
+}

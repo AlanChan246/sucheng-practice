@@ -1,0 +1,11 @@
+{
+  "viewport": "desktop",
+  "theme": "dark",
+  "scenario": "levels-unlocked",
+  "route": "levels",
+  "fixture": true,
+  "reducedMotion": true,
+  "findings": [],
+  "errors": [],
+  "failedRequests": []
+}

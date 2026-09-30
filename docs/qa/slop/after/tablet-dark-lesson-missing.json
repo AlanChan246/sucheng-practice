@@ -1,0 +1,132 @@
+{
+  "viewport": "tablet",
+  "theme": "dark",
+  "scenario": "lesson-missing",
+  "route": "learn/not-a-lesson",
+  "fixture": true,
+  "reducedMotion": true,
+  "findings": [],
+  "errors": [],
+  "failedRequests": [],
+  "measurements": {
+    "title": "速成 · 兩鍵合拍",
+    "theme": "dark",
+    "viewport": [
+      768,
+      1024
+    ],
+    "pageWidth": 768,
+    "overflow": false,
+    "headings": [
+      [
+        "H1",
+        "這個小節暫時找不到"
+      ]
+    ],
+    "fontsLoaded": "loaded",
+    "brokenImages": [],
+    "smallText": [],
+    "smallTargets": [
+      {
+        "element": "a. 開始",
+        "size": [
+          36,
+          48
+        ]
+      },
+      {
+        "element": "a. 足跡",
+        "size": [
+          36,
+          48
+        ]
+      }
+    ],
+    "unnamedControls": [],
+    "inlineHeadingGaps": [
+      {
+        "element": "h1. 這個小節暫時找不到",
+        "before": "30px",
+        "after": "22px",
+        "size": "30px",
+        "weight": "760"
+      }
+    ],
+    "firstKeys": [],
+    "navTop": 0,
+    "text": "A日B月這個小節暫時找不到回到短課列表，揀一節開始。查看短課",
+    "detectorGroups": [],
+    "resources": [
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/index-CcZlyOc2.js",
+        "bytes": 96945,
+        "duration": 27.299999997019768
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/index-BHFGh7ny.css",
+        "bytes": 51623,
+        "duration": 22.5
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-latin-wght-normal-CjMECRfU.woff2",
+        "bytes": 25436,
+        "duration": 91.09999999403954
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-118-wght-normal-CWrNe9UE.woff2",
+        "bytes": 60596,
+        "duration": 47.1000000089407
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-117-wght-normal-DxSUmn6U.woff2",
+        "bytes": 65740,
+        "duration": 48.29999999701977
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-116-wght-normal-Df_sWUUP.woff2",
+        "bytes": 72012,
+        "duration": 53.29999999701977
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-119-wght-normal-uK-ZmsBB.woff2",
+        "bytes": 34852,
+        "duration": 51
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-113-wght-normal-CRQfLReA.woff2",
+        "bytes": 71784,
+        "duration": 52
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-111-wght-normal-SqRJKajE.woff2",
+        "bytes": 75160,
+        "duration": 51
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-112-wght-normal-BWioGL2B.woff2",
+        "bytes": 73848,
+        "duration": 46.5
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-115-wght-normal-BzydpMOE.woff2",
+        "bytes": 74632,
+        "duration": 46
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-103-wght-normal-tcQ1zu-u.woff2",
+        "bytes": 70708,
+        "duration": 59.20000000298023
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/sucheng-dict.json",
+        "bytes": 79408,
+        "duration": 75.79999999701977
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/favicon.svg",
+        "bytes": 850,
+        "duration": 49.6000000089407
+      }
+    ]
+  }
+}

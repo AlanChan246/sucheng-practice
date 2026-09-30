@@ -1,0 +1,5 @@
+
+> sucheng-practice@0.0.0 lint
+> oxlint
+
+src/hooks/useSettings.tsx:80:17: warning react(only-export-components): Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components.

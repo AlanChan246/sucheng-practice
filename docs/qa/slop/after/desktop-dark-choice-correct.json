@@ -1,0 +1,132 @@
+{
+  "viewport": "desktop",
+  "theme": "dark",
+  "scenario": "choice-correct",
+  "route": "practice/code-to-char",
+  "fixture": true,
+  "reducedMotion": true,
+  "findings": [],
+  "errors": [],
+  "failedRequests": [],
+  "measurements": {
+    "title": "速成 · 兩鍵合拍",
+    "theme": "dark",
+    "viewport": [
+      1440,
+      900
+    ],
+    "pageWidth": 1440,
+    "overflow": false,
+    "headings": [
+      [
+        "H1",
+        "看碼選字"
+      ],
+      [
+        "H2",
+        "搞掂！"
+      ]
+    ],
+    "fontsLoaded": "loaded",
+    "brokenImages": [],
+    "smallText": [],
+    "smallTargets": [],
+    "unnamedControls": [],
+    "inlineHeadingGaps": [
+      {
+        "element": "h1. 看碼選字",
+        "before": "0px",
+        "after": "0px",
+        "size": "16px",
+        "weight": "600"
+      },
+      {
+        "element": "h2. 搞掂！",
+        "before": "0px",
+        "after": "4px",
+        "size": "21px",
+        "weight": "690"
+      }
+    ],
+    "firstKeys": [],
+    "text": "稍後繼續看碼選字1 / 5哪個字可以用這個碼打出來？AB1塔2明你的選擇3離4逍搞掂！明，AB。記住這一下。再嚟一題每答一題都會儲存。想休息，隨時再接住。",
+    "detectorGroups": [],
+    "resources": [
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/index-CcZlyOc2.js",
+        "bytes": 96945,
+        "duration": 18.100000008940697
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/index-BHFGh7ny.css",
+        "bytes": 51623,
+        "duration": 13.899999991059303
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-118-wght-normal-CWrNe9UE.woff2",
+        "bytes": 60596,
+        "duration": 24.899999991059303
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-115-wght-normal-BzydpMOE.woff2",
+        "bytes": 74632,
+        "duration": 25.69999998807907
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-latin-wght-normal-CjMECRfU.woff2",
+        "bytes": 25436,
+        "duration": 11
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-119-wght-normal-uK-ZmsBB.woff2",
+        "bytes": 34852,
+        "duration": 11.299999997019768
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-117-wght-normal-DxSUmn6U.woff2",
+        "bytes": 65740,
+        "duration": 14.899999991059303
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-116-wght-normal-Df_sWUUP.woff2",
+        "bytes": 72012,
+        "duration": 15.799999997019768
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/sucheng-dict.json",
+        "bytes": 79408,
+        "duration": 25.200000002980232
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/favicon.svg",
+        "bytes": 850,
+        "duration": 9.199999988079071
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-111-wght-normal-SqRJKajE.woff2",
+        "bytes": 75160,
+        "duration": 33
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-112-wght-normal-BWioGL2B.woff2",
+        "bytes": 73848,
+        "duration": 23.799999997019768
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-104-wght-normal-4GaPENTg.woff2",
+        "bytes": 69076,
+        "duration": 21.599999994039536
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-113-wght-normal-CRQfLReA.woff2",
+        "bytes": 71784,
+        "duration": 20
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-100-wght-normal-CeyvuWjh.woff2",
+        "bytes": 63580,
+        "duration": 21
+      }
+    ]
+  }
+}

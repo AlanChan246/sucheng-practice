@@ -1,0 +1,129 @@
+
+> sucheng-practice@0.0.0 test
+> tsx --tsconfig tsconfig.app.json --test tests/*.test.ts
+
+TAP version 13
+# Subtest: v1 migration preserves totals, unlocks and best level scores without inventing mastery
+ok 1 - v1 migration preserves totals, unlocks and best level scores without inventing mastery
+  ---
+  duration_ms: 2.54375
+  type: 'test'
+  ...
+# Subtest: malformed statistics are normalized and unknown versions are rejected
+ok 2 - malformed statistics are normalized and unknown versions are rejected
+  ---
+  duration_ms: 0.274958
+  type: 'test'
+  ...
+# Subtest: session snapshots preserve feedback, options and assisted questions across reload
+ok 3 - session snapshots preserve feedback, options and assisted questions across reload
+  ---
+  duration_ms: 1.215125
+  type: 'test'
+  ...
+# Subtest: every same-code group has exactly one valid choice in generated options
+ok 4 - every same-code group has exactly one valid choice in generated options
+  ---
+  duration_ms: 398.122208
+  type: 'test'
+  ...
+# Subtest: first incorrect answer is saved immediately and retry waits behind two questions
+ok 5 - first incorrect answer is saved immediately and retry waits behind two questions
+  ---
+  duration_ms: 0.46025
+  type: 'test'
+  ...
+# Subtest: retry success does not inflate original scores; finish is idempotent
+ok 6 - retry success does not inflate original scores; finish is idempotent
+  ---
+  duration_ms: 1.136
+  type: 'test'
+  ...
+# Subtest: late mistakes remain in review without an immediate back-to-back retry
+ok 7 - late mistakes remain in review without an immediate back-to-back retry
+  ---
+  duration_ms: 0.329875
+  type: 'test'
+  ...
+# Subtest: three independent recalls on separate days are needed for steady status
+ok 8 - three independent recalls on separate days are needed for steady status
+  ---
+  duration_ms: 1.218
+  type: 'test'
+  ...
+# Subtest: level 80% boundary and repeated attempts preserve unlocked progress
+ok 9 - level 80% boundary and repeated attempts preserve unlocked progress
+  ---
+  duration_ms: 0.724333
+  type: 'test'
+  ...
+# Subtest: all lesson examples and teaching codes match the shipped dictionary
+ok 10 - all lesson examples and teaching codes match the shipped dictionary
+  ---
+  duration_ms: 1.23325
+  type: 'test'
+  ...
+# Subtest: interactive product flows with an in-memory DOM (not visual browser QA)
+    # Subtest: first success uses actual touch keys and stores onboarding
+    ok 1 - first success uses actual touch keys and stores onboarding
+      ---
+      duration_ms: 67.585042
+      type: 'test'
+      ...
+    # Subtest: practice autosubmits, focuses next, and resumes saved feedback after remount
+    ok 2 - practice autosubmits, focuses next, and resumes saved feedback after remount
+      ---
+      duration_ms: 108.322083
+      type: 'test'
+      ...
+    # Subtest: wrong answers explain the key and highlight the correct key without hiding the input
+    ok 3 - wrong answers explain the key and highlight the correct key without hiding the input
+      ---
+      duration_ms: 29.004625
+      type: 'test'
+      ...
+    # Subtest: choice questions reveal the actual correct option and support number keys
+    ok 4 - choice questions reveal the actual correct option and support number keys
+      ---
+      duration_ms: 16.960084
+      type: 'test'
+      ...
+    # Subtest: dictation defaults to learner-controlled reveal; peeking marks assistance
+    ok 5 - dictation defaults to learner-controlled reveal; peeking marks assistance
+      ---
+      duration_ms: 42.300334
+      type: 'test'
+      ...
+    # Subtest: dictation hides on the selected timer and keeps that pace for the next question
+    ok 6 - dictation hides on the selected timer and keeps that pace for the next question
+      ---
+      duration_ms: 1850.408458
+      type: 'test'
+      ...
+    # Subtest: lesson, levels and empty progress expose useful next actions
+    ok 7 - lesson, levels and empty progress expose useful next actions
+      ---
+      duration_ms: 63.716917
+      type: 'test'
+      ...
+    # Subtest: storage failure does not crash practice or claim it was persisted
+    ok 8 - storage failure does not crash practice or claim it was persisted
+      ---
+      duration_ms: 11.158875
+      type: 'test'
+      ...
+    1..8
+ok 11 - interactive product flows with an in-memory DOM (not visual browser QA)
+  ---
+  duration_ms: 2193.695167
+  type: 'test'
+  ...
+1..11
+# tests 19
+# suites 0
+# pass 19
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 3021.560125

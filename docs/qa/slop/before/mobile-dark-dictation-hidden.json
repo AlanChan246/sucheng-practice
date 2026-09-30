@@ -1,0 +1,11 @@
+{
+  "viewport": "mobile",
+  "theme": "dark",
+  "scenario": "dictation-hidden",
+  "route": "practice/dictation",
+  "fixture": true,
+  "reducedMotion": true,
+  "findings": [],
+  "errors": [],
+  "failedRequests": []
+}

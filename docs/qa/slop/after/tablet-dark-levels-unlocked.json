@@ -1,0 +1,192 @@
+{
+  "viewport": "tablet",
+  "theme": "dark",
+  "scenario": "levels-unlocked",
+  "route": "levels",
+  "fixture": true,
+  "reducedMotion": true,
+  "findings": [],
+  "errors": [],
+  "failedRequests": [],
+  "measurements": {
+    "title": "速成 · 兩鍵合拍",
+    "theme": "dark",
+    "viewport": [
+      768,
+      1024
+    ],
+    "pageWidth": 768,
+    "overflow": false,
+    "headings": [
+      [
+        "H1",
+        "一路練落去，字會越識越多。"
+      ]
+    ],
+    "fontsLoaded": "loaded",
+    "brokenImages": [],
+    "smallText": [],
+    "smallTargets": [
+      {
+        "element": "a. 開始",
+        "size": [
+          36,
+          48
+        ]
+      },
+      {
+        "element": "a. 足跡",
+        "size": [
+          36,
+          48
+        ]
+      }
+    ],
+    "unnamedControls": [],
+    "inlineHeadingGaps": [
+      {
+        "element": "h1. 一路練落去，字會越識越多。",
+        "before": "0px",
+        "after": "22px",
+        "size": "33.024px",
+        "weight": "760"
+      }
+    ],
+    "firstKeys": [],
+    "navTop": 0,
+    "text": "回到學少少一路練落去，字會越識越多。已完成 1 / 167 關。每關首次準確率達 80%，就開下一關。關卡按字表固定分組。剛開始學，可以先用短課認識字根。選擇章節第 1 章第 2 章第 3 章第 4 章第 5 章第 6 章第 7 章第 8 章第 9 章第 10 章第 11 章第 12 章第 13 章第 14 章第 15 章第 16 章第 17 章01第 1 關 25 字阿 啊 哀已過關 · 最佳 100%02第 2 關 25 字黯 岸 骯準備好就開始03第 3 關 25 字把 靶 耙完成第 2 關後開啟04第 4 關 25 字半 伴 拌完成第 3 關後開啟05第 5 關 25 字薄 雹 保完成第 4 關後開啟06第 6 關 25 字輩 貝 狽完成第 5 關後開啟07第 7 關 25 字蔽 斃 閉完成第 6 關後開啟08第 8 關 25 字遍 辯 辨完成第 7 關後開啟09第 9 關 25 字屏 餅 丙完成第 8 關後開啟10第 10 關 25 字駁 帛 跛完成第 9 關後開啟",
+    "detectorGroups": [],
+    "resources": [
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/index-CcZlyOc2.js",
+        "bytes": 96945,
+        "duration": 15.299999997019768
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/index-BHFGh7ny.css",
+        "bytes": 51623,
+        "duration": 12.599999994039536
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-115-wght-normal-BzydpMOE.woff2",
+        "bytes": 74632,
+        "duration": 22.100000008940697
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-117-wght-normal-DxSUmn6U.woff2",
+        "bytes": 65740,
+        "duration": 21.799999997019768
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-119-wght-normal-uK-ZmsBB.woff2",
+        "bytes": 34852,
+        "duration": 22.200000002980232
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-118-wght-normal-CWrNe9UE.woff2",
+        "bytes": 60596,
+        "duration": 7.799999997019768
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-116-wght-normal-Df_sWUUP.woff2",
+        "bytes": 72012,
+        "duration": 8.200000002980232
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-111-wght-normal-SqRJKajE.woff2",
+        "bytes": 75160,
+        "duration": 7.299999997019768
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-113-wght-normal-CRQfLReA.woff2",
+        "bytes": 71784,
+        "duration": 7.799999997019768
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-latin-wght-normal-CjMECRfU.woff2",
+        "bytes": 25436,
+        "duration": 5.9000000059604645
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/sucheng-dict.json",
+        "bytes": 79408,
+        "duration": 8.799999997019768
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/favicon.svg",
+        "bytes": 850,
+        "duration": 2.9000000059604645
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-107-wght-normal-BC2EpFaE.woff2",
+        "bytes": 73320,
+        "duration": 7.5999999940395355
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-100-wght-normal-CeyvuWjh.woff2",
+        "bytes": 63580,
+        "duration": 7
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-112-wght-normal-BWioGL2B.woff2",
+        "bytes": 73848,
+        "duration": 7.200000002980232
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-22-wght-normal-BxkVDKYB.woff2",
+        "bytes": 43012,
+        "duration": 8.100000008940697
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-43-wght-normal-xnDjStnc.woff2",
+        "bytes": 40492,
+        "duration": 8.099999994039536
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-25-wght-normal-t7uRby9D.woff2",
+        "bytes": 43816,
+        "duration": 8.200000002980232
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-114-wght-normal-D5H20qUS.woff2",
+        "bytes": 85412,
+        "duration": 12.100000008940697
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-54-wght-normal-Bctil8qQ.woff2",
+        "bytes": 42644,
+        "duration": 11.5
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-110-wght-normal-CuMLARLR.woff2",
+        "bytes": 79660,
+        "duration": 11.900000005960464
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-104-wght-normal-4GaPENTg.woff2",
+        "bytes": 69076,
+        "duration": 11.600000008940697
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-108-wght-normal-BExvVcn7.woff2",
+        "bytes": 72840,
+        "duration": 13.099999994039536
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-106-wght-normal-Chq-ESxo.woff2",
+        "bytes": 72824,
+        "duration": 13.399999991059303
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-72-wght-normal-zLtu43lR.woff2",
+        "bytes": 38064,
+        "duration": 16.700000002980232
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-33-wght-normal-BuZ7TSCr.woff2",
+        "bytes": 30908,
+        "duration": 16.799999997019768
+      }
+    ]
+  }
+}

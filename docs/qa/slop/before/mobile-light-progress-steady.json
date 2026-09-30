@@ -1,0 +1,32 @@
+{
+  "viewport": "mobile",
+  "theme": "light",
+  "scenario": "progress-steady",
+  "route": "progress",
+  "fixture": true,
+  "reducedMotion": true,
+  "findings": [
+    {
+      "antipattern": "first-viewport-column-overflow",
+      "name": "One column stretches the first viewport",
+      "description": "A multi-column opening section lets one column run far past the fold while its sibling fits in a single viewport, so the short column floats in dead space and the fold falls deep inside one section. Balance the columns, cap the tall one, or let the long content flow below the opening row.",
+      "severity": "warning",
+      "category": "quality",
+      "file": "http://127.0.0.1:4173/sucheng-practice/progress",
+      "line": 0,
+      "snippet": "div.app-shell opens the page with one column running 176% of the viewport tall while a sibling fits in 8% — the fold falls deep inside the section"
+    },
+    {
+      "antipattern": "cream-palette",
+      "name": "Cream / beige palette",
+      "description": "A warm cream or beige page background has become the default \"tasteful\" AI surface, reached for by reflex. Choose a background that comes from a deliberate palette, not the safe warm off-white.",
+      "severity": "warning",
+      "category": "slop",
+      "file": "http://127.0.0.1:4173/sucheng-practice/progress",
+      "line": 0,
+      "snippet": "cream/beige page background rgb(248, 246, 237)"
+    }
+  ],
+  "errors": [],
+  "failedRequests": []
+}

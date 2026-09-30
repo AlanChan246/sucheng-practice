@@ -1,0 +1,544 @@
+{
+  "source": "https://impeccable.style/slop/",
+  "fetched_at": "2026-09-30 Asia/Hong_Kong",
+  "sha256": "78bfd1c06d01824e2fa0de7771346469c23cbcc1dbbac088a3201d9a4ae6aef9",
+  "count": 67,
+  "rules": [
+    {
+      "id": "design-system-font",
+      "layer": "cli",
+      "section": "Your design system",
+      "category": "personalized",
+      "name": "Font outside DESIGN.md",
+      "description": "This font is not in your documented type system. Use an approved font, or update DESIGN.md if the addition is intentional."
+    },
+    {
+      "id": "design-system-color",
+      "layer": "cli",
+      "section": "Your design system",
+      "category": "personalized",
+      "name": "Color outside DESIGN.md",
+      "description": "This color falls outside your documented palette. Use a palette color, or add the new color to your design system."
+    },
+    {
+      "id": "design-system-radius",
+      "layer": "cli",
+      "section": "Your design system",
+      "category": "personalized",
+      "name": "Radius outside DESIGN.md",
+      "description": "This corner radius is not in your documented scale. Use an existing radius, or update the system to include the new shape."
+    },
+    {
+      "id": "design-system-font-size",
+      "layer": "cli",
+      "section": "Your design system",
+      "category": "personalized",
+      "name": "Font size outside DESIGN.md",
+      "description": "This font size is not in your documented type scale. Use an existing size, or add a new step to the system."
+    },
+    {
+      "id": "codex-grid-background",
+      "layer": "cli",
+      "section": "Visual Details",
+      "category": "slop",
+      "name": "Decorative grid-line background",
+      "description": "A decorative grid adds lines without helping people use the page. Keep grids for canvases, maps, or tasks that need measurement."
+    },
+    {
+      "id": "border-accent-on-rounded",
+      "layer": "cli",
+      "section": "Visual Details",
+      "category": "slop",
+      "name": "Border accent on rounded element",
+      "description": "A thick colored border makes a rounded card’s outline compete with its content. Try a lighter border, or let the background define the card."
+    },
+    {
+      "id": "glassmorphism",
+      "layer": "llm",
+      "section": "Visual Details",
+      "category": "slop",
+      "name": "Glassmorphism everywhere",
+      "description": "Blur effects, glass cards, and glow borders used as decoration rather than to solve a real layering problem."
+    },
+    {
+      "id": "side-tab",
+      "layer": "cli",
+      "section": "Visual Details",
+      "category": "slop",
+      "name": "Side-tab accent border",
+      "description": "A thick colored stripe turns an ordinary card into something that looks like an alert. Remove it when there is no status or warning to communicate."
+    },
+    {
+      "id": "gpt-thin-border-wide-shadow",
+      "layer": "cli",
+      "section": "Visual Details",
+      "category": "slop",
+      "name": "Hairline border with wide shadow",
+      "description": "A thin border and a broad shadow both define the same card. Choose the edge or the shadow to give the surface a clearer shape."
+    },
+    {
+      "id": "repeating-stripes-gradient",
+      "layer": "cli",
+      "section": "Visual Details",
+      "category": "slop",
+      "name": "Repeating-gradient stripes",
+      "description": "Repeating stripes fill empty space with visual noise. Use a plain surface, or a texture that belongs to the design."
+    },
+    {
+      "id": "over-round",
+      "layer": "llm",
+      "section": "Visual Details",
+      "category": "slop",
+      "name": "Extreme border-radius on cards",
+      "description": "Large corner radii can squeeze the content and make every card look alike. Reduce the curve to suit the card’s size and give its contents room."
+    },
+    {
+      "id": "sketchy-svg",
+      "layer": "llm",
+      "section": "Visual Details",
+      "category": "slop",
+      "name": "Rough SVG illustrations",
+      "description": "A hastily drawn mascot or scene can make a finished page feel unfinished. Use a well-made illustration or photo, or leave it out."
+    },
+    {
+      "id": "kicker-above-heading",
+      "layer": "cli",
+      "section": "Typography",
+      "category": "slop",
+      "name": "Label above a heading",
+      "description": "A small label above a heading adds another line to read. Remove it if it repeats the heading, or work the useful words into the heading itself."
+    },
+    {
+      "id": "undersized-ui-text",
+      "layer": "cli",
+      "section": "Typography",
+      "category": "quality",
+      "name": "Tiny interface text",
+      "description": "Navigation, links, and controls are hard to use when their text is too small. Increase the size so people can read them without zooming."
+    },
+    {
+      "id": "flat-type-hierarchy",
+      "layer": "cli",
+      "section": "Typography",
+      "category": "slop",
+      "name": "Flat type hierarchy",
+      "description": "Headings and body text look too similar, making the page hard to scan. Give them clearer differences in size, weight, or spacing."
+    },
+    {
+      "id": "icon-tile-stack",
+      "layer": "cli",
+      "section": "Typography",
+      "category": "slop",
+      "name": "Icon tile stacked above heading",
+      "description": "An icon in a rounded square above a heading is a familiar AI feature-card pattern. Try placing the icon beside the heading, or remove its container."
+    },
+    {
+      "id": "italic-serif-display",
+      "layer": "cli",
+      "section": "Typography",
+      "category": "slop",
+      "name": "Italic serif display headline",
+      "description": "An oversized italic serif headline is a familiar shortcut to an editorial look. Choose a type style that fits the product’s character, rather than borrowing the same one by default."
+    },
+    {
+      "id": "hero-eyebrow-chip",
+      "layer": "cli",
+      "section": "Typography",
+      "category": "slop",
+      "name": "Badge above the main headline",
+      "description": "A small pill above the headline can look clickable and compete with the message. Remove it if it adds little, or put useful information in the headline or supporting text."
+    },
+    {
+      "id": "oversized-h1",
+      "layer": "cli",
+      "section": "Typography",
+      "category": "slop",
+      "name": "Oversized hero headline",
+      "description": "A long headline at display size can fill the first screen by itself. Shorten it or reduce the size so the page has room to explain the offer and show what to do next."
+    },
+    {
+      "id": "extreme-negative-tracking",
+      "layer": "cli",
+      "section": "Typography",
+      "category": "slop",
+      "name": "Crushed letter spacing",
+      "description": "Letters pushed too close together become hard to distinguish. Loosen the spacing until each character is clear, especially at smaller screen sizes."
+    },
+    {
+      "id": "overused-font",
+      "layer": "cli",
+      "section": "Typography",
+      "category": "slop",
+      "name": "Overused font",
+      "description": "Familiar defaults such as Inter and Geist can make unrelated products look alike. Choose typography for the product’s character and reading needs, and keep established brand fonts when they fit."
+    },
+    {
+      "id": "single-font",
+      "layer": "llm",
+      "section": "Typography",
+      "category": "slop",
+      "name": "Single font for everything",
+      "description": "One font family can work well across a whole page. If everything feels flat, vary size, weight, and spacing before deciding whether a second family would help."
+    },
+    {
+      "id": "all-caps-body",
+      "layer": "cli",
+      "section": "Typography",
+      "category": "quality",
+      "name": "All-caps body text",
+      "description": "Long passages in capitals are tiring to read. Use sentence case for body text, and keep uppercase for short labels or headings."
+    },
+    {
+      "id": "radial-halo",
+      "layer": "cli",
+      "section": "Color & Contrast",
+      "category": "slop",
+      "name": "Radial-gradient background halo",
+      "description": "A bright halo on a dark page is a familiar AI background effect. Remove the glow when it competes with the content or has no role in the design."
+    },
+    {
+      "id": "radial-spotlight-glow",
+      "layer": "cli",
+      "section": "Color & Contrast",
+      "category": "slop",
+      "name": "Soft spotlight behind content",
+      "description": "A faint glow behind a section adds emphasis without explaining what matters. Use spacing, contrast, or a clear heading to guide attention."
+    },
+    {
+      "id": "ai-color-palette",
+      "layer": "cli",
+      "section": "Color & Contrast",
+      "category": "slop",
+      "name": "AI color palette",
+      "description": "Purple gradients and bright cyan on dark backgrounds are familiar AI defaults. Build the palette around the product’s identity and how people will use it."
+    },
+    {
+      "id": "dark-glow",
+      "layer": "cli",
+      "section": "Color & Contrast",
+      "category": "slop",
+      "name": "Dark mode with glowing accents",
+      "description": "Glowing borders and accents can turn a dark interface into a wall of neon. Keep the dark theme if it suits the product, and reduce the glow so useful information stands out."
+    },
+    {
+      "id": "gradient-text",
+      "layer": "cli",
+      "section": "Color & Contrast",
+      "category": "slop",
+      "name": "Gradient text",
+      "description": "A gradient makes color change across a heading or number, often just for decoration. Try one solid color and use size or weight for emphasis."
+    },
+    {
+      "id": "gray-on-color",
+      "layer": "cli",
+      "section": "Color & Contrast",
+      "category": "quality",
+      "name": "Gray text on colored background",
+      "description": "Neutral gray text can look washed out on a colored surface. Try a darker tint or a light text color, then check the contrast against the actual background."
+    },
+    {
+      "id": "cream-palette",
+      "layer": "cli",
+      "section": "Color & Contrast",
+      "category": "slop",
+      "name": "Cream / beige palette",
+      "description": "Cream and beige can become a default substitute for a considered palette. Keep them when they belong to the product, and choose the rest of the colors with equal care."
+    },
+    {
+      "id": "numbered-section-labels",
+      "layer": "cli",
+      "section": "Layout & Space",
+      "category": "slop",
+      "name": "Tiny numbered section labels",
+      "description": "Tiny numbers beside headings add clutter when there is no sequence to follow. Keep numbering for steps or an order that matters."
+    },
+    {
+      "id": "edge-flush-cards",
+      "layer": "browser",
+      "section": "Layout & Space",
+      "category": "quality",
+      "name": "Cards flush against the scroller edge",
+      "description": "Cards meet the scroller’s edge without room around them. Add matching space at both ends so the first and last cards have a clear boundary."
+    },
+    {
+      "id": "text-occlusion",
+      "layer": "browser",
+      "section": "Layout & Space",
+      "category": "quality",
+      "name": "Text covered by another element",
+      "description": "An opaque layer covers readable text. Move the layer or give the text clear space."
+    },
+    {
+      "id": "first-viewport-column-overflow",
+      "layer": "browser",
+      "section": "Layout & Space",
+      "category": "quality",
+      "name": "Unbalanced opening columns",
+      "description": "One opening column extends far below the other, leaving a large gap. Rebalance the content, or move the longer section below both columns."
+    },
+    {
+      "id": "heading-rhythm",
+      "layer": "browser",
+      "section": "Layout & Space",
+      "category": "quality",
+      "name": "Heading closer to the previous section",
+      "description": "A heading sits closer to the previous block than its own content. Give it more space above than below."
+    },
+    {
+      "id": "hero-metric-layout",
+      "layer": "llm",
+      "section": "Layout & Space",
+      "category": "slop",
+      "name": "Hero metric layout",
+      "description": "A huge number with a small label and supporting stats is a familiar landing-page template. Lead with a metric when it helps explain the product, and give it enough context to mean something."
+    },
+    {
+      "id": "identical-card-grids",
+      "layer": "llm",
+      "section": "Layout & Space",
+      "category": "slop",
+      "name": "Identical card grids",
+      "description": "Repeated icon, heading, and text cards give every point the same weight. Group related ideas and vary the layout when the content needs different treatment."
+    },
+    {
+      "id": "monotonous-spacing",
+      "layer": "cli",
+      "section": "Layout & Space",
+      "category": "slop",
+      "name": "Monotonous spacing",
+      "description": "Equal gaps everywhere make it hard to tell what belongs together. Keep related items close and leave more space between separate groups."
+    },
+    {
+      "id": "nested-cards",
+      "layer": "cli",
+      "section": "Layout & Space",
+      "category": "slop",
+      "name": "Nested cards",
+      "description": "Cards inside cards create visual noise and excessive depth. Flatten the hierarchy: use spacing, typography, and dividers instead of nesting containers."
+    },
+    {
+      "id": "line-length",
+      "layer": "browser",
+      "section": "Layout & Space",
+      "category": "quality",
+      "name": "Line length too long",
+      "description": "Long lines make it harder to find the start of the next line. Try a text width of 65–75 characters, then adjust for the font, content, and screen."
+    },
+    {
+      "id": "text-overflow",
+      "layer": "browser",
+      "section": "Layout & Space",
+      "category": "quality",
+      "name": "Content overflowing its container",
+      "description": "Content spills outside its container or makes the page scroll sideways. Let text wrap and elements shrink; use a scrolling region when the content needs one."
+    },
+    {
+      "id": "clipped-overflow-container",
+      "layer": "browser",
+      "section": "Layout & Space",
+      "category": "quality",
+      "name": "Clipped menus and popovers",
+      "description": "A container cuts off a menu, tooltip, or popover that needs to extend beyond it. Allow the overflow, or render that layer outside the clipping container."
+    },
+    {
+      "id": "pulsing-dot",
+      "layer": "cli",
+      "section": "Motion",
+      "category": "slop",
+      "name": "Pulsing status dot",
+      "description": "A pulsing status dot draws attention even when nothing changes. Keep static status still, and use motion to signal activity that matters."
+    },
+    {
+      "id": "blinking-cursor",
+      "layer": "browser",
+      "section": "Motion",
+      "category": "slop",
+      "name": "Decorative blinking cursor",
+      "description": "A blinking cursor makes ordinary text look editable or like a terminal. Remove it from static copy; keep it where people can type."
+    },
+    {
+      "id": "marquee",
+      "layer": "cli",
+      "section": "Motion",
+      "category": "slop",
+      "name": "Auto-scrolling marquee",
+      "description": "Auto-scrolling text or logos make people read at the page’s pace. Keep them still, or give people controls to pause and browse."
+    },
+    {
+      "id": "bounce-easing",
+      "layer": "cli",
+      "section": "Motion",
+      "category": "slop",
+      "name": "Bounce or elastic easing",
+      "description": "A dialog that bounces or overshoots can make a routine action feel fussy. Let it settle quickly, and save playful motion for moments that suit the product."
+    },
+    {
+      "id": "layout-transition",
+      "layer": "cli",
+      "section": "Motion",
+      "category": "quality",
+      "name": "Animation that changes layout",
+      "description": "Animating size or spacing can shift nearby content and make transitions stutter. Use transforms for visual movement where possible, and check performance when the layout needs to change."
+    },
+    {
+      "id": "image-hover-transform",
+      "layer": "cli",
+      "section": "Motion",
+      "category": "slop",
+      "name": "Images that move on hover",
+      "description": "Zooming or rotating every image on hover adds movement without a clear purpose. Keep images still unless the motion helps explain what people can do."
+    },
+    {
+      "id": "repeated-container-text",
+      "layer": "cli",
+      "section": "Copy",
+      "category": "quality",
+      "name": "Same text repeated inside one container",
+      "description": "The same label appears in several slots of one card. Keep it once, where it matters."
+    },
+    {
+      "id": "em-dash-overuse",
+      "layer": "cli",
+      "section": "Copy",
+      "category": "slop",
+      "name": "Em-dash overuse",
+      "description": "A dash in every sentence is a familiar AI writing habit. Use a full stop between separate thoughts, and choose other punctuation when it makes the sentence easier to follow."
+    },
+    {
+      "id": "marketing-buzzword",
+      "layer": "cli",
+      "section": "Copy",
+      "category": "slop",
+      "name": "Generic marketing claims",
+      "description": "Words like “supercharge” and “world-class” promise a lot without explaining the product. Say what people can do and what improves for them."
+    },
+    {
+      "id": "aphoristic-cadence",
+      "layer": "cli",
+      "section": "Copy",
+      "category": "slop",
+      "name": "Forced contrast",
+      "description": "Repeated lines like “Not a feature. A platform.” make every point sound like a slogan. Explain the distinction when it matters, and state the useful information directly."
+    },
+    {
+      "id": "theater-slop-phrase",
+      "layer": "cli",
+      "section": "Copy",
+      "category": "slop",
+      "name": "Calling things “theater”",
+      "description": "Calling something “theater” can replace an explanation with a dismissal. Name what is ineffective or misleading, and explain why."
+    },
+    {
+      "id": "shape-assembled-illustration",
+      "layer": "cli",
+      "section": "Imagery",
+      "category": "slop",
+      "name": "Placeholder-style illustrations",
+      "description": "A scene built from generic circles and blocks can look like placeholder art. Choose imagery that says something specific about the product."
+    },
+    {
+      "id": "organic-clip-path",
+      "layer": "cli",
+      "section": "Imagery",
+      "category": "quality",
+      "name": "Jagged image masks",
+      "description": "A jagged image mask tries to imitate a torn or organic edge. Use a prepared cut-out asset for that effect, or choose a clean crop."
+    },
+    {
+      "id": "buried-raster",
+      "layer": "cli",
+      "section": "Imagery",
+      "category": "quality",
+      "name": "Images hidden under overlays",
+      "description": "A nearly opaque overlay hides the image you added. Reduce it until the image contributes, or remove an image that serves no purpose."
+    },
+    {
+      "id": "broken-image",
+      "layer": "cli",
+      "section": "Imagery",
+      "category": "quality",
+      "name": "Broken or placeholder image",
+      "description": "An image with a missing, empty, or placeholder source leaves the page unfinished. Add the intended asset and check that it loads, or remove the image."
+    },
+    {
+      "id": "script-error",
+      "layer": "browser",
+      "section": "General quality",
+      "category": "quality",
+      "name": "JavaScript errors on load",
+      "description": "An uncaught JavaScript error can break controls or hide content. Fix the error, then check that the page works before polishing its appearance."
+    },
+    {
+      "id": "content-hidden-at-rest",
+      "layer": "browser",
+      "section": "General quality",
+      "category": "quality",
+      "name": "Content stuck waiting to appear",
+      "description": "Content stays hidden when its entrance animation fails to run. Make it visible by default so people can still use the page if the animation fails."
+    },
+    {
+      "id": "cramped-padding",
+      "layer": "browser",
+      "section": "General quality",
+      "category": "quality",
+      "name": "Cramped padding",
+      "description": "Text pressed against a button or card edge feels cramped. Add enough padding to separate the content from its container, using your spacing scale."
+    },
+    {
+      "id": "body-text-viewport-edge",
+      "layer": "browser",
+      "section": "General quality",
+      "category": "quality",
+      "name": "Body text touching the page edge",
+      "description": "Paragraphs need space at the sides of the screen. Add horizontal padding to the content container, and check that it remains at narrow widths."
+    },
+    {
+      "id": "justified-text",
+      "layer": "cli",
+      "section": "General quality",
+      "category": "quality",
+      "name": "Justified text",
+      "description": "Justified paragraphs can leave distracting gaps between words. Align body text to the start of the line, or use hyphenation and check the spacing at each screen size."
+    },
+    {
+      "id": "low-contrast",
+      "layer": "cli",
+      "section": "General quality",
+      "category": "quality",
+      "name": "Low-contrast text",
+      "description": "Text that blends into its background is hard to read. Increase contrast to meet WCAG AA: at least 4.5:1 for regular text and 3:1 for large text."
+    },
+    {
+      "id": "skipped-heading",
+      "layer": "cli",
+      "section": "General quality",
+      "category": "quality",
+      "name": "Skipped heading level",
+      "description": "Heading levels help screen reader users navigate. Match them to the page structure: use h2 for a section under h1, then h3 for a subsection."
+    },
+    {
+      "id": "tight-leading",
+      "layer": "cli",
+      "section": "General quality",
+      "category": "quality",
+      "name": "Tight line height",
+      "description": "Closely packed lines make paragraphs hard to follow. Start around 1.5 times the font size, then adjust for the typeface and line length."
+    },
+    {
+      "id": "tiny-text",
+      "layer": "cli",
+      "section": "General quality",
+      "category": "quality",
+      "name": "Tiny body text",
+      "description": "Small body text makes reading a chore. Start around 16px, then check the actual typeface on a phone and desktop. Keep secondary text comfortably readable too."
+    },
+    {
+      "id": "wide-tracking",
+      "layer": "cli",
+      "section": "General quality",
+      "category": "quality",
+      "name": "Wide letter spacing on body text",
+      "description": "Spreading letters far apart makes paragraphs harder to read. Keep body text near the font’s default spacing; save wider spacing for short labels."
+    }
+  ]
+}

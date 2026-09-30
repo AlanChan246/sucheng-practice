@@ -1,0 +1,173 @@
+{
+  "viewport": "tablet",
+  "theme": "light",
+  "scenario": "lesson-try-together",
+  "route": "learn/try-together",
+  "fixture": true,
+  "reducedMotion": true,
+  "findings": [
+    {
+      "antipattern": "cream-palette",
+      "name": "Cream / beige palette",
+      "description": "A warm cream or beige page background has become the default \"tasteful\" AI surface, reached for by reflex. Choose a background that comes from a deliberate palette, not the safe warm off-white.",
+      "severity": "warning",
+      "category": "slop",
+      "file": "http://127.0.0.1:4173/sucheng-practice/learn/try-together",
+      "line": 0,
+      "snippet": "cream/beige page background rgb(248, 246, 237)"
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "measurements": {
+    "title": "速成 · 兩鍵合拍",
+    "theme": "light",
+    "viewport": [
+      768,
+      1024
+    ],
+    "pageWidth": 768,
+    "overflow": false,
+    "headings": [
+      [
+        "H1",
+        "合起來，自己試"
+      ]
+    ],
+    "fontsLoaded": "loaded",
+    "brokenImages": [],
+    "smallText": [],
+    "smallTargets": [
+      {
+        "element": "a. 開始",
+        "size": [
+          36,
+          48
+        ]
+      },
+      {
+        "element": "a. 足跡",
+        "size": [
+          36,
+          48
+        ]
+      }
+    ],
+    "unnamedControls": [],
+    "inlineHeadingGaps": [
+      {
+        "element": "h1. 合起來，自己試",
+        "before": "0px",
+        "after": "22px",
+        "size": "38px",
+        "weight": "760"
+      }
+    ],
+    "firstKeys": [],
+    "navTop": 0,
+    "text": "所有短課合起來，自己試「好」的倉頡碼是 VND：女、弓、木。速成取女 V 和木 D，留下 VD。按下方鍵帽，感受一下；然後收起提示，自己試 4 題。收起提示，自己試 好首碼女V尾碼木D女 + 子（子再拆弓、木）→ 全碼 VND，速成 VD倉頡 VND → 速成 VDV女N弓D木A日刪除點字根鍵，看看它對應的字母。",
+    "detectorGroups": [
+      {
+        "selector": "body",
+        "tagName": "body",
+        "rect": null,
+        "isPageLevel": true,
+        "isHidden": false,
+        "findings": [
+          {
+            "type": "cream-palette",
+            "category": "slop",
+            "severity": "warning",
+            "advisory": false,
+            "detail": "cream/beige page background rgb(248, 246, 237)",
+            "ignoreValue": "",
+            "name": "Cream / beige palette",
+            "description": "A warm cream or beige page background has become the default \"tasteful\" AI surface, reached for by reflex. Choose a background that comes from a deliberate palette, not the safe warm off-white."
+          }
+        ]
+      }
+    ],
+    "resources": [
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/index-CcZlyOc2.js",
+        "bytes": 96945,
+        "duration": 14.200000002980232
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/index-BHFGh7ny.css",
+        "bytes": 51623,
+        "duration": 12
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-119-wght-normal-uK-ZmsBB.woff2",
+        "bytes": 34852,
+        "duration": 21
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-115-wght-normal-BzydpMOE.woff2",
+        "bytes": 74632,
+        "duration": 20.200000002980232
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-117-wght-normal-DxSUmn6U.woff2",
+        "bytes": 65740,
+        "duration": 20.099999994039536
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-118-wght-normal-CWrNe9UE.woff2",
+        "bytes": 60596,
+        "duration": 7.199999988079071
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-116-wght-normal-Df_sWUUP.woff2",
+        "bytes": 72012,
+        "duration": 7.800000011920929
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-113-wght-normal-CRQfLReA.woff2",
+        "bytes": 71784,
+        "duration": 7.5
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-111-wght-normal-SqRJKajE.woff2",
+        "bytes": 75160,
+        "duration": 6.5
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-110-wght-normal-CuMLARLR.woff2",
+        "bytes": 79660,
+        "duration": 6.200000002980232
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-latin-wght-normal-CjMECRfU.woff2",
+        "bytes": 25436,
+        "duration": 6.200000002980232
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/sucheng-dict.json",
+        "bytes": 79408,
+        "duration": 10.599999994039536
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/favicon.svg",
+        "bytes": 850,
+        "duration": 4.100000008940697
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-24-wght-normal-q2nxC991.woff2",
+        "bytes": 38064,
+        "duration": 12.599999994039536
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-104-wght-normal-4GaPENTg.woff2",
+        "bytes": 69076,
+        "duration": 12.200000002980232
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-112-wght-normal-BWioGL2B.woff2",
+        "bytes": 73848,
+        "duration": 7.5
+      }
+    ]
+  }
+}

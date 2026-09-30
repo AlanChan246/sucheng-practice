@@ -1,0 +1,11 @@
+{
+  "viewport": "desktop",
+  "theme": "dark",
+  "scenario": "input-retry",
+  "route": "practice/char-to-code",
+  "fixture": true,
+  "reducedMotion": true,
+  "findings": [],
+  "errors": [],
+  "failedRequests": []
+}

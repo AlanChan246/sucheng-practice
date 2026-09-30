@@ -25,7 +25,7 @@ function loadSettings() {
     const raw = localStorage.getItem(STORAGE_KEY)
     if (!raw) return { theme: 'light' as ThemeMode }
     const parsed = JSON.parse(raw) as { theme?: ThemeMode }
-    return { theme: parsed.theme ?? ('light' as ThemeMode) }
+    return { theme: ['light', 'dark', 'system'].includes(parsed.theme ?? '') ? parsed.theme! : ('light' as ThemeMode) }
   } catch {
     return { theme: 'light' as ThemeMode }
   }
@@ -44,7 +44,7 @@ export function SettingsProvider({ children }: { children: ReactNode }) {
   )
 
   useEffect(() => {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(settings))
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(settings)) } catch { /* Theme remains usable when browser storage is unavailable. */ }
     setResolvedTheme(resolveTheme(settings.theme))
   }, [settings])
 

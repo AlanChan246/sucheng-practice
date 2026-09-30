@@ -1,0 +1,13 @@
+{
+  "viewport": "tablet",
+  "theme": "dark",
+  "scenario": "dictionary-error",
+  "route": "practice/char-to-code",
+  "fixture": true,
+  "reducedMotion": true,
+  "findings": [],
+  "errors": [],
+  "failedRequests": [
+    "503 http://127.0.0.1:4173/sucheng-practice/sucheng-dict.json"
+  ]
+}

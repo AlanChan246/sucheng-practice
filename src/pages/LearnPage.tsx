@@ -1,146 +1,39 @@
-import { DemoSteps } from '../components/DemoSteps'
-import { KeyboardHighlight } from '../components/KeyboardHighlight'
-import { KEYBOARD_ROWS, RADICAL_BY_KEY, RADICALS } from '../lib/cangjie'
-import {
-  CODING_EXAMPLES,
-  CODING_RULES,
-  RADICAL_VARIANTS,
-} from '../lib/learnContent'
+import { useState } from 'react'
+import { useParams } from 'react-router-dom'
+import { ArrowLeft, ArrowRight, Check, ChevronRight } from 'lucide-react'
+import { AppLink } from '../components/AppLink'
+import { Keyboard } from '../components/Keyboard'
+import { CodeExplanation } from '../components/CodeExplanation'
+import { LoadingError, LoadingSkeleton } from '../components/LoadingSkeleton'
+import { useDictionary } from '../hooks/useDictionary'
+import { useProgress } from '../hooks/useProgress'
+import { LESSONS, nextLesson } from '../lib/lessons'
+import { RADICAL_BY_KEY } from '../lib/cangjie'
+import { CODING_EXAMPLES, CODING_RULES, RADICAL_VARIANTS } from '../lib/learnContent'
+import { Empty } from './PracticePage'
 
 export function LearnPage() {
-  return (
-    <div className="page-stack">
-      <header className="page-header page-header--center">
-        <h1>速成 = 倉頡的首碼 + 尾碼</h1>
-        <p className="lede lede--center">
-          先認得字根與輔根，再學會把字切開。速成只要倉頡全碼的第一個和最後一個鍵。
-        </p>
-      </header>
+  const { progress } = useProgress()
+  const next = nextLesson(progress.lessons)
+  const [selected, setSelected] = useState('A')
+  const [example, setExample] = useState(CODING_EXAMPLES[1])
+  return <div className="page-section learn-index"><header className="page-heading"><h1>一次學少少，<br />立即試得到。</h1><p className="lede">認一點字根，按幾下，再自己回想。<br />每小節只練一個概念。</p>{next && <AppLink className="button button-primary" to={`/learn/${next.id}`}>{Object.keys(progress.lessons).length ? '接住下一小節' : '由第一個字開始'}<ArrowRight size={18} /></AppLink>}</header>
+    <section className="lesson-path" aria-label="短課程"><h2>先從這裡上手。</h2><ol>{LESSONS.map((lesson, index) => <li key={lesson.id}><AppLink to={`/learn/${lesson.id}`}><span className={`lesson-number ${progress.lessons[lesson.id]?.completed ? 'is-complete' : ''}`}>{progress.lessons[lesson.id]?.completed ? <Check size={24} aria-label="已完成" /> : String(index + 1).padStart(2, '0')}</span><span className="lesson-description"><strong>{lesson.title}</strong><small>{lesson.description}</small></span><span className="lesson-example" aria-hidden="true">{lesson.example}</span><ChevronRight size={20} aria-hidden="true" /></AppLink></li>)}</ol></section>
+    <section className="levels-invitation"><div><h2>想一路練落去？</h2><p>到關卡練字庫；準確率達 80%，就開下一關。</p></div><AppLink className="text-link" to="/levels">看看關卡 <ArrowRight size={18} /></AppLink></section>
+    <section className="root-reference" id="reference"><h2>忘記哪個鍵？這裡找。</h2><p className="muted">24 個基本字根，加上 X「難」、Z「重」特殊鍵。點一下，看常見變形。</p><Keyboard onKey={key => setSelected(key.toUpperCase())} value={selected} label="點選字根查看說明" /><div className="root-detail" aria-live="polite"><div className="root-detail-heading"><span>{RADICAL_BY_KEY[selected].name}</span><code>{selected}</code></div><div>{(RADICAL_VARIANTS[selected] ?? []).map((variant, i) => <p key={i}>{variant.form && <strong className="variant-glyph">{variant.form}</strong>}{variant.note}{variant.examples.length > 0 && <small>例：{variant.examples.join('、')}</small>}</p>)}{!RADICAL_VARIANTS[selected]?.length && <p>先記住「{RADICAL_BY_KEY[selected].name}」對應 {selected}。拆字時再按這個鍵。</p>}</div></div></section>
+    <details className="plain-details reference-details"><summary>再看看取碼規則與例字</summary><ol className="coding-rules">{CODING_RULES.map(rule => <li key={rule.title}><strong>{rule.title}</strong><p>{rule.body}</p></li>)}</ol><div className="example-picker" role="group" aria-label="選一個例字">{CODING_EXAMPLES.map(item => <button type="button" key={item.char} aria-pressed={item.char === example.char} onClick={() => setExample(item)}>{item.char}</button>)}</div><CodeExplanation entry={example} /></details>
+  </div>
+}
 
-      <section className="section-block">
-        <h2>24 個部首鍵位</h2>
-        <div className="keyboard-layout-learn">
-          {KEYBOARD_ROWS.map((row) => (
-            <div key={row.join('-')} className="keyboard-row keyboard-row--learn">
-              {row.map((key) => {
-                const radical = RADICAL_BY_KEY[key]
-                return (
-                  <article key={key} className="radical-card">
-                    <span className="radical-key">{key}</span>
-                    <span className="radical-glyph">{radical.glyph}</span>
-                    <span className="radical-name">{radical.name}</span>
-                  </article>
-                )
-              })}
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section className="section-block">
-        <h2>字根變體辨識</h2>
-        <p className="section-copy section-copy--center">
-          主根會變形。形狀像同一個主根，就按同一鍵——例如「手」包含「扌」。
-        </p>
-        <div className="variant-grid">
-          {RADICALS.map((radical) => {
-            const variants = RADICAL_VARIANTS[radical.key] ?? []
-            return (
-              <article key={radical.key} className="variant-card">
-                <header className="variant-card-head">
-                  <span className="variant-card-key">{radical.key}</span>
-                  <span className="variant-card-glyph">{radical.glyph}</span>
-                  <span className="variant-card-name">{radical.name}</span>
-                </header>
-                <ul className="variant-forms">
-                  {variants.map((variant, index) => (
-                    <li key={`${radical.key}-${variant.form ?? 'note'}-${index}`}>
-                      {variant.form ? (
-                        <span className="variant-form-glyph" aria-hidden="true">
-                          {variant.form}
-                        </span>
-                      ) : null}
-                      <div className="variant-form-body">
-                        <p className="variant-form-note">{variant.note}</p>
-                        {variant.examples.length > 0 && (
-                          <p className="variant-form-examples">
-                            例：{variant.examples.join('、')}
-                          </p>
-                        )}
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-              </article>
-            )
-          })}
-        </div>
-      </section>
-
-      <section className="section-block">
-        <h2>取碼規則與邏輯</h2>
-        <p className="section-copy section-copy--center">
-          把漢字切開成字根，寫出倉頡全碼，再留下首尾兩鍵就是速成。
-        </p>
-        <ol className="rule-steps">
-          {CODING_RULES.map((rule, index) => (
-            <li key={rule.title}>
-              <span className="rule-steps-index">{index + 1}</span>
-              <div>
-                <strong>{rule.title}</strong>
-                <p>{rule.body}</p>
-              </div>
-            </li>
-          ))}
-        </ol>
-        <h3 className="subsection-title">例字拆解</h3>
-        <div className="code-breakdown">
-          {CODING_EXAMPLES.map((example) => (
-            <article key={example.char} className="code-breakdown-item">
-              <div className="code-breakdown-char">{example.char}</div>
-              <div className="code-breakdown-flow">
-                <span className="code-breakdown-parts">{example.parts.join(' + ')}</span>
-                <span className="code-breakdown-arrow" aria-hidden="true">
-                  →
-                </span>
-                <span className="code-breakdown-full">
-                  倉頡 {example.cangjie.toUpperCase()}
-                </span>
-                <span className="code-breakdown-arrow" aria-hidden="true">
-                  →
-                </span>
-                <span className="code-breakdown-quick">
-                  速成 {example.quick.toUpperCase()}
-                </span>
-              </div>
-              <p className="code-breakdown-note">{example.note}</p>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section className="section-block section-split">
-        <div>
-          <h2>鍵盤怎麼對</h2>
-          <p className="section-copy">練習時會高亮你要按的鍵。</p>
-          <KeyboardHighlight highlightKeys={['A', 'B']} compact />
-        </div>
-        <div>
-          <h2>拆碼示範</h2>
-          <DemoSteps />
-        </div>
-      </section>
-
-      <section className="section-block section-block--muted">
-        <h2>小提示</h2>
-        <ul className="tip-list">
-          <li>輔根也按主根那一鍵，例如「扌」是 Q、「氵」是 E、「亻」是 O。</li>
-          <li>單一字根的字，速成碼就是那個鍵，例如「日」是 A。</li>
-          <li>兩個字根通常剛好兩鍵，例如「明」是 AB。</li>
-          <li>字根很多時，只記第一個和最後一個。</li>
-          <li>空心「口」與有內容的外框「囗」不同：後者屬田（W）。</li>
-        </ul>
-      </section>
-    </div>
-  )
+export function LessonPage() {
+  const { lessonId } = useParams()
+  const lesson = LESSONS.find(l => l.id === lessonId)
+  const { dict, loading, error } = useDictionary()
+  const [pressed, setPressed] = useState('')
+  if (!lesson) return <Empty title="這個小節暫時找不到" text="回到短課列表，揀一節開始。" to="/learn" action="查看短課" />
+  if (loading) return <LoadingSkeleton label="準備這個小節…" />
+  if (error || !dict) return <LoadingError message={error ?? '字庫載入失敗。'} onRetry={() => window.location.reload()} />
+  const entry = dict.entries.find(e => e.char === lesson.example)
+  if (!entry) return <LoadingError message="這個例字暫時未能載入，請先返回短課列表。" />
+  return <article className="lesson-page page-section"><AppLink className="text-link" to="/learn"><ArrowLeft size={17} />所有短課</AppLink><div className="lesson-composition"><div className="lesson-copy"><h1>{lesson.title}</h1><p className="lede">{lesson.note}</p><p>按下方鍵帽，感受一下；然後收起提示，自己試 {lesson.chars.length} 題。</p><AppLink className="button button-primary" to={`/practice/char-to-code?lesson=${lesson.id}`}>收起提示，自己試 <ArrowRight size={19} /></AppLink></div><div className="lesson-specimen"><div className="display-character">{entry.char}</div><CodeExplanation entry={entry} /></div></div><div className="lesson-keyboard"><Keyboard keys={[...new Set([...lesson.keys, ...entry.quick.toUpperCase()])]} onKey={key => setPressed(v => (v.length >= entry.quick.length ? key : v + key))} onDelete={() => setPressed(v => v.slice(0, -1))} value={pressed} /><p className="lesson-press-result" aria-live="polite">{pressed ? `${pressed.toUpperCase()} · ${[...pressed.toUpperCase()].map(k => RADICAL_BY_KEY[k]?.name).join('、')}` : '點字根鍵，看看它對應的字母。'}</p></div></article>
 }

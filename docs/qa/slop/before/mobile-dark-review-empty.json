@@ -1,0 +1,22 @@
+{
+  "viewport": "mobile",
+  "theme": "dark",
+  "scenario": "review-empty",
+  "route": "practice/char-to-code?source=review",
+  "fixture": true,
+  "reducedMotion": true,
+  "findings": [
+    {
+      "antipattern": "flat-type-hierarchy",
+      "name": "Flat type hierarchy",
+      "description": "Font sizes are too close together — no clear visual hierarchy. Use fewer sizes with more contrast (aim for at least a 1.25 ratio between steps).",
+      "severity": "warning",
+      "category": "slop",
+      "file": "http://127.0.0.1:4173/sucheng-practice/practice/char-to-code?source=review",
+      "line": 0,
+      "snippet": "Sizes: 16px, 24px, 27px (ratio 1.7:1)"
+    }
+  ],
+  "errors": [],
+  "failedRequests": []
+}

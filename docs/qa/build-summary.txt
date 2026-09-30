@@ -1,0 +1,8 @@
+> sucheng-practice@0.0.0 build
+> npm run dict && tsc -b && vite build
+> sucheng-practice@0.0.0 dict
+> node scripts/build-dict.mjs
+Built dictionary: 4159 chars, 167 levels
+dist/assets/index-2qt774BI.css                                  142.57 kB │ gzip: 53.09 kB
+dist/assets/index-ChHYBpf-.js                                   300.77 kB │ gzip: 97.31 kB
+✓ built in 247ms

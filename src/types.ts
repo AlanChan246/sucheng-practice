@@ -50,6 +50,57 @@ export interface AppProgress {
   levels: Record<string, LevelProgress>
   modes: Record<PracticeMode, ModeStats>
   updatedAt: string
+  onboarded: boolean
+  lessons: Record<string, { completed: boolean; attempts: number; bestAccuracy: number }>
+  characters: Record<string, CharacterProgress>
+  sessions: Record<string, PracticeSession>
+  lastSessionKey: string | null
+}
+
+export interface CharacterProgress {
+  id: number
+  char: string
+  quick: string
+  correct: number
+  wrong: number
+  modes: Partial<Record<PracticeMode, { correct: number; wrong: number }>>
+  wrongKeys: Record<string, number>
+  status: 'learning' | 'review' | 'steady'
+  successfulChecks: number[]
+  lastSuccessSession: string | null
+  lastSeenAt: number
+  dueAt: number
+}
+
+export interface SessionAnswer {
+  entryId: number
+  input: string
+  correct: boolean
+  assisted: boolean
+  retry: boolean
+  at: number
+  elapsedMs: number
+}
+
+export interface PracticeSession {
+  id: string
+  key: string
+  href: string
+  label: string
+  mode: PracticeMode
+  source: 'all' | 'quick' | 'review' | 'weak' | 'lesson' | 'level'
+  levelId?: number
+  lessonId?: string
+  queue: { entryId: number; retry: boolean }[]
+  initialCount: number
+  index: number
+  answers: SessionAnswer[]
+  options: Record<string, number[]>
+  createdAt: number
+  updatedAt: number
+  finishedAt?: number
+  assistedIndices?: number[]
+  hiddenIndices?: number[]
 }
 
 export interface SessionStats {

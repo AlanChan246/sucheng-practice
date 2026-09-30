@@ -1,0 +1,149 @@
+{
+  "viewport": "mobile",
+  "theme": "light",
+  "scenario": "home-first",
+  "route": "",
+  "fixture": true,
+  "reducedMotion": true,
+  "findings": [
+    {
+      "antipattern": "cream-palette",
+      "name": "Cream / beige palette",
+      "description": "A warm cream or beige page background has become the default \"tasteful\" AI surface, reached for by reflex. Choose a background that comes from a deliberate palette, not the safe warm off-white.",
+      "severity": "warning",
+      "category": "slop",
+      "file": "http://127.0.0.1:4173/sucheng-practice/",
+      "line": 0,
+      "snippet": "cream/beige page background rgb(248, 246, 237)"
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "measurements": {
+    "title": "速成 · 兩鍵合拍",
+    "theme": "light",
+    "viewport": [
+      390,
+      844
+    ],
+    "pageWidth": 390,
+    "overflow": false,
+    "headings": [
+      [
+        "H1",
+        "明，就係呢兩鍵。"
+      ]
+    ],
+    "fontsLoaded": "loaded",
+    "brokenImages": [],
+    "smallText": [],
+    "smallTargets": [],
+    "unnamedControls": [],
+    "inlineHeadingGaps": [
+      {
+        "element": "h1. 明，就係呢兩鍵。",
+        "before": "0px",
+        "after": "15px",
+        "size": "35px",
+        "weight": "760"
+      }
+    ],
+    "firstKeys": [
+      {
+        "name": "A 日",
+        "top": 658.984375,
+        "bottom": 744.578125
+      },
+      {
+        "name": "B 月",
+        "top": 658.984375,
+        "bottom": 744.578125
+      }
+    ],
+    "navTop": 776,
+    "text": "明，就係呢兩鍵。左邊「日」是 A，右邊「月」是 B。先按 A，再按 B，試出第一個字。已經識少少？直接練 明日 A月 B輸入首碼、尾碼滿 2 碼即作答；Enter 亦可送出。使用裝置鍵盤A日B月刪除先學兩鍵。下一小節，再加一點。學少少自己試慢慢記得",
+    "detectorGroups": [
+      {
+        "selector": "body",
+        "tagName": "body",
+        "rect": null,
+        "isPageLevel": true,
+        "isHidden": false,
+        "findings": [
+          {
+            "type": "cream-palette",
+            "category": "slop",
+            "severity": "warning",
+            "advisory": false,
+            "detail": "cream/beige page background rgb(248, 246, 237)",
+            "ignoreValue": "",
+            "name": "Cream / beige palette",
+            "description": "A warm cream or beige page background has become the default \"tasteful\" AI surface, reached for by reflex. Choose a background that comes from a deliberate palette, not the safe warm off-white."
+          }
+        ]
+      }
+    ],
+    "resources": [
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/index-CEoWWJ-T.js",
+        "bytes": 96949,
+        "duration": 34.80000001192093
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/index-DNLQKNo_.css",
+        "bytes": 51627,
+        "duration": 29.099999994039536
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-latin-wght-normal-CjMECRfU.woff2",
+        "bytes": 25436,
+        "duration": 62.1000000089407
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-118-wght-normal-CWrNe9UE.woff2",
+        "bytes": 60596,
+        "duration": 36.8999999910593
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-117-wght-normal-DxSUmn6U.woff2",
+        "bytes": 65740,
+        "duration": 61.1000000089407
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-116-wght-normal-Df_sWUUP.woff2",
+        "bytes": 72012,
+        "duration": 85.29999999701977
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-119-wght-normal-uK-ZmsBB.woff2",
+        "bytes": 34852,
+        "duration": 87.20000000298023
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-115-wght-normal-BzydpMOE.woff2",
+        "bytes": 74632,
+        "duration": 109.20000000298023
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-113-wght-normal-CRQfLReA.woff2",
+        "bytes": 71784,
+        "duration": 40.20000000298023
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-114-wght-normal-D5H20qUS.woff2",
+        "bytes": 85412,
+        "duration": 42.79999999701977
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-111-wght-normal-SqRJKajE.woff2",
+        "bytes": 75160,
+        "duration": 80.5
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/favicon.svg",
+        "bytes": 850,
+        "duration": 58.599999994039536
+      }
+    ]
+  }
+}

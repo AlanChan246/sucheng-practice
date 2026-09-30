@@ -4,12 +4,15 @@
     <meta charset="UTF-8" />
     <script>
       (function () {
-        var redirect = sessionStorage.getItem('gh-pages-redirect')
-        // Restore deep link after GitHub Pages 404 fallback.
-        // Include a history idx so React Router's browser history stays in sync.
-        if (redirect) {
-          sessionStorage.removeItem('gh-pages-redirect')
-          history.replaceState({ idx: 0 }, '', redirect)
+        try {
+          var redirect = sessionStorage.getItem('gh-pages-redirect')
+          // Include a history idx so React Router's browser history stays in sync.
+          if (redirect) {
+            sessionStorage.removeItem('gh-pages-redirect')
+            history.replaceState({ idx: 0 }, '', redirect)
+          }
+        } catch {
+          // Direct routes remain usable when the browser blocks storage.
         }
         // Migrate leftover HashRouter URLs like /levels#/practice → /practice
         if (location.hash.indexOf('#/') === 0) {
@@ -19,21 +22,23 @@
         }
       })()
     </script>
-    <link rel="icon" type="image/png" href="/logo.png" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="給小學生、中學生的速成輸入法學習與練習網站"
+      content="學少少，試一次。以短課、觸控鍵盤和錯題重溫，練熟速成首尾兩鍵。"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <title>速成練習</title>
+    <title>速成 · 兩鍵合拍</title>
   </head>
   <body>
+    <!--
+    THESIS: 兩鍵合拍。先用日 A、月 B 打出明，從實際按鍵開始學習。
+    OWN-WORLD: 暖紙、深墨、青檸鍵帽；大中文字與短促按壓回應。
+    STORY: 學少少，自己試；錯題先理解，隔題及隔日再回想。
+    FIRST VIEWPORT: 桌面左側一句教學、右側大明字與答案框，下方可按 A/B；手機改成單欄。
+    FORM: 使用者選定三個自訂方案中的 A。code-led；此提案沒有產生程序化 seed。
+    FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
+    -->
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

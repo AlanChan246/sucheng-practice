@@ -1,0 +1,147 @@
+{
+  "viewport": "mobile",
+  "theme": "dark",
+  "scenario": "choice-wrong",
+  "route": "practice/code-to-char",
+  "fixture": true,
+  "reducedMotion": true,
+  "findings": [],
+  "errors": [],
+  "failedRequests": [],
+  "measurements": {
+    "title": "速成 · 兩鍵合拍",
+    "theme": "dark",
+    "viewport": [
+      390,
+      844
+    ],
+    "pageWidth": 390,
+    "overflow": false,
+    "headings": [
+      [
+        "H1",
+        "看碼選字"
+      ],
+      [
+        "H2",
+        "差少少，睇吓字根對應。"
+      ]
+    ],
+    "fontsLoaded": "loaded",
+    "brokenImages": [],
+    "smallText": [],
+    "smallTargets": [],
+    "unnamedControls": [],
+    "inlineHeadingGaps": [
+      {
+        "element": "h1. 看碼選字",
+        "before": "0px",
+        "after": "0px",
+        "size": "16px",
+        "weight": "600"
+      },
+      {
+        "element": "h2. 差少少，睇吓字根對應。",
+        "before": "0px",
+        "after": "4px",
+        "size": "19px",
+        "weight": "690"
+      }
+    ],
+    "firstKeys": [],
+    "text": "稍後繼續看碼選字1 / 5哪個字可以用這個碼打出來？AB1除2明3扮4柄差少少，睇吓字根對應。你選了「阿」；這題可選的是「明」。首碼日A尾碼月B左右結構：先日後月，全碼剛好兩鍵倉頡 AB → 速成 AB已加入重溫。隔幾題再試一次。再嚟一題每答一題都會儲存。想休息，隨時再接住。",
+    "detectorGroups": [],
+    "resources": [
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/index-CcZlyOc2.js",
+        "bytes": 96945,
+        "duration": 13.899999991059303
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/index-BHFGh7ny.css",
+        "bytes": 51623,
+        "duration": 11.700000002980232
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-115-wght-normal-BzydpMOE.woff2",
+        "bytes": 74632,
+        "duration": 13.400000005960464
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-118-wght-normal-CWrNe9UE.woff2",
+        "bytes": 60596,
+        "duration": 13.099999994039536
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-latin-wght-normal-CjMECRfU.woff2",
+        "bytes": 25436,
+        "duration": 3.7999999970197678
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-119-wght-normal-uK-ZmsBB.woff2",
+        "bytes": 34852,
+        "duration": 4.300000011920929
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-117-wght-normal-DxSUmn6U.woff2",
+        "bytes": 65740,
+        "duration": 5.200000002980232
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-116-wght-normal-Df_sWUUP.woff2",
+        "bytes": 72012,
+        "duration": 5.700000002980232
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/sucheng-dict.json",
+        "bytes": 79408,
+        "duration": 8.399999991059303
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/favicon.svg",
+        "bytes": 850,
+        "duration": 2.300000011920929
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-111-wght-normal-SqRJKajE.woff2",
+        "bytes": 75160,
+        "duration": 13.899999991059303
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-110-wght-normal-CuMLARLR.woff2",
+        "bytes": 79660,
+        "duration": 10.099999994039536
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-104-wght-normal-4GaPENTg.woff2",
+        "bytes": 69076,
+        "duration": 9.700000002980232
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-109-wght-normal-CkWCzlGP.woff2",
+        "bytes": 72304,
+        "duration": 8.799999997019768
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-101-wght-normal-BazQQPpe.woff2",
+        "bytes": 62876,
+        "duration": 8.600000008940697
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-113-wght-normal-CRQfLReA.woff2",
+        "bytes": 71784,
+        "duration": 6.5
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-24-wght-normal-q2nxC991.woff2",
+        "bytes": 38064,
+        "duration": 7.399999991059303
+      },
+      {
+        "name": "http://127.0.0.1:4173/sucheng-practice/assets/noto-sans-tc-112-wght-normal-BWioGL2B.woff2",
+        "bytes": 73848,
+        "duration": 7.5
+      }
+    ]
+  }
+}

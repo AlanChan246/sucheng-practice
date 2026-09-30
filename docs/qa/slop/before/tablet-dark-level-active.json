@@ -1,0 +1,11 @@
+{
+  "viewport": "tablet",
+  "theme": "dark",
+  "scenario": "level-active",
+  "route": "levels/1",
+  "fixture": true,
+  "reducedMotion": true,
+  "findings": [],
+  "errors": [],
+  "failedRequests": []
+}
